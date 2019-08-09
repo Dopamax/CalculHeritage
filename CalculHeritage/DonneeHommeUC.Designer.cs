@@ -428,6 +428,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btn_annuler);
             this.Controls.Add(this.btn_Valider);
             this.Controls.Add(this.rdbtn_m_non);
