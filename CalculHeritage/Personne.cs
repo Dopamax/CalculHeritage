@@ -119,5 +119,13 @@ namespace CalculHeritage
 
             return numero_matiere;
         }
+        void hello()
+        {
+            bool itswork = true;
+            if (itswork)
+            {
+                System.Windows.Forms.MessageBox.Show("Hello");
+            }
+        }
     }
 }
