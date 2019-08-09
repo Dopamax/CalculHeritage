@@ -91,9 +91,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(455, 88);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 13);
+            this.label2.Size = new System.Drawing.Size(88, 13);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Nombre de fils :";
+            this.label2.Text = "Nombre de filles :";
             // 
             // txt_nombrefille
             // 

@@ -72,6 +72,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AffichageFinalUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AffichageFinalUC.Designer.cs">
+      <DependentUpon>AffichageFinalUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="DonneeFemmeUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     <Compile Include="Question1CU.Designer.cs">
       <DependentUpon>Question1CU.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AffichageFinalUC.resx">
+      <DependentUpon>AffichageFinalUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DonneeFemmeUC.resx">
       <DependentUpon>DonneeFemmeUC.cs</DependentUpon>
     </EmbeddedResource>

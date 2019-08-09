@@ -65,5 +65,59 @@ namespace CalculHeritage
             }
             return t[0];
         }
+
+        public string Partition_filles(int nombre)
+        {
+            string partition = null;
+            //Ici votre Code
+
+            return partition;
+        }
+
+        public string Partition_fils(int nombre)
+        {
+            string partition = null;
+            //Ici votre Code
+
+            return partition;
+        }
+
+        public string Partition_Grandpere()
+        {
+            string partition = null;
+            //Ici votre Code
+
+            return partition;
+        }
+        public string Partition_GrandeMere_matern()
+        {
+            string partition = null;
+            //Ici votre Code
+
+            return partition;
+        }
+
+        public string Partition_GrandeMere_patern()
+        {
+            string partition = null;
+            //Ici votre Code
+
+            return partition;
+        }
+        public string Partition_Epouses()
+        {
+            string partition = null;
+            //Ici votre Code
+
+            return partition;
+        }
+
+        public string OrigineDeLaMAtiere()
+        {
+
+            string numero_matiere = null;
+
+            return numero_matiere;
+        }
     }
 }
