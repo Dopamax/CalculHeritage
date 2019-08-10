@@ -13,7 +13,7 @@ namespace CalculHeritage
         /// <summary>
         /// we need somme variables 
         /// </summary>
-        static int fils = 0, filles = 0, pere = 0, mere = 0, seour = 0, frere = 0, gpere = 0, gmerep = 0, gmerem = 0;
+        static int fils = 0, filles = 0, pere = 0, mere = 0, seour = 0, frere = 0, gpere = 0, gmerep = 0, gmerem = 0, epousse = 0, marie = 0;
 
         public string Typep { get => typep; set => typep = value; }
         public double Part { get => part; set => part = value; }
@@ -232,11 +232,40 @@ namespace CalculHeritage
             }
             return partition;
         }
+        public string Partition_Marie(bool vivante)
+        {
+            string partition = null;
+            marie = Convert.ToInt16(vivante);
+            //Ici votre Code
+            if (vivante)
+            {
+                if (fils>0 || filles>0)
+                {
+                    partition = "1/4";
+                }
+                else
+                {
+                    partition = "1/2";
+                }
+            }
+            return partition;
+        }
         public string Partition_Epouses(int nombre)
         {
             string partition = null;
+            epousse = nombre;
             //Ici votre Code
-
+            if (nombre>0)
+            {
+                if (fils>0 || filles>0)
+                {
+                    partition = "1/8";
+                }
+                else
+                {
+                    partition = "1/4";
+                }
+            }
             return partition;
         }
 
