@@ -186,6 +186,52 @@ namespace CalculHeritage
             }
             return partition;
         }
+        public string Partition_Frere(int nombre)
+        {
+            string partition = null;
+            frere = nombre;
+            //Ici votre Code
+            if (nombre>0)
+            {
+                if (fils==0 && filles==0 && pere==0 && gpere==0)
+                {
+                    if (nombre>1)
+                    {
+                        partition = "prennent le reste";
+                    }
+                    else
+                    {
+                        partition = "prend le reste";
+                    }
+                }
+            }
+            return partition;
+        }
+        public string Partition_Seoure(int nombre)
+        {
+            string partition = null;
+            seour = nombre;
+            //Ici votre Code
+            if (nombre ==0)
+            {
+                if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere == 0)
+                {
+                    partition ="1/2";
+                }
+            }
+            else if (nombre > 1)
+            {
+                if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere == 0)
+                {
+                    partition = "2/3";
+                }
+                else if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere > 0)
+                {
+                    partition = "prennent le rest avec son frere";
+                }
+            }
+            return partition;
+        }
         public string Partition_Epouses(int nombre)
         {
             string partition = null;
