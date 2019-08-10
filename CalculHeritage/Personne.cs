@@ -10,7 +10,10 @@ namespace CalculHeritage
     {
         private string typep;
         private double part;
-
+        /// <summary>
+        /// we need somme variables 
+        /// </summary>
+        static int fils, filles, pere;
 
         public string Typep { get => typep; set => typep = value; }
         public double Part { get => part; set => part = value; }
@@ -66,15 +69,17 @@ namespace CalculHeritage
             return t[0];
         }
 
-        public string Partition_filles(int nombre)
+        public string Partition_fils(int nombre)
         {
             string partition = null;
             //Ici votre Code
-
+            if (nombre<0)
+            {
+                return "prend le rest";
+            }
             return partition;
         }
-
-        public string Partition_fils(int nombre)
+        public string Partition_filles(int nombre)
         {
             string partition = null;
             //Ici votre Code
