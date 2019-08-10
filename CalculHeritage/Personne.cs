@@ -13,7 +13,7 @@ namespace CalculHeritage
         /// <summary>
         /// we need somme variables 
         /// </summary>
-        static int fils = 0, filles = 0, pere = 0, mere = 0, seour = 0, frere = 0, gpere = 0, gmerep = 0, gmerem = 0, epousse = 0, marie = 0;
+        int fils = 0, filles = 0, pere = 0, mere = 0, seour = 0, frere = 0, gpere = 0, gmerep = 0, gmerem = 0, epousse = 0, marie = 0;
 
         public string Typep { get => typep; set => typep = value; }
         public double Part { get => part; set => part = value; }
