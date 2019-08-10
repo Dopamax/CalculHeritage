@@ -29,36 +29,36 @@
         private void InitializeComponent()
         {
             this.panel_origine_matiere = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.lbl_numero_matiere = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel_fils = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_fils_part = new System.Windows.Forms.Label();
+            this.lbl_fils_flch = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel_Filles = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbl_filles_part = new System.Windows.Forms.Label();
+            this.lbl_filles_flch = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel_Freres = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lbl_frere_part = new System.Windows.Forms.Label();
+            this.lbl_frere_flch = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel_Soeurs = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lbl_soeurs_part = new System.Windows.Forms.Label();
+            this.lbl_soeurs_flch = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel_Pere = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lbl_pere_part = new System.Windows.Forms.Label();
+            this.lbl_pere_fleche = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel_Mere = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lbl_mere_part = new System.Windows.Forms.Label();
+            this.lbl_mere_flch = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lbl_epouses_part = new System.Windows.Forms.Label();
+            this.lbl_epouse_flch = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
             this.panel_origine_matiere.SuspendLayout();
             this.panel_fils.SuspendLayout();
             this.panel_Filles.SuspendLayout();
@@ -79,16 +79,6 @@
             this.panel_origine_matiere.Size = new System.Drawing.Size(279, 80);
             this.panel_origine_matiere.TabIndex = 0;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "L\'origine de la matière";
-            // 
             // lbl_numero_matiere
             // 
             this.lbl_numero_matiere.AutoSize = true;
@@ -99,26 +89,46 @@
             this.lbl_numero_matiere.TabIndex = 0;
             this.lbl_numero_matiere.Text = "12";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(17, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(170, 18);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "L\'origine de la matière";
+            // 
             // panel_fils
             // 
             this.panel_fils.BackColor = System.Drawing.Color.LightGreen;
-            this.panel_fils.Controls.Add(this.label16);
-            this.panel_fils.Controls.Add(this.label2);
+            this.panel_fils.Controls.Add(this.lbl_fils_part);
+            this.panel_fils.Controls.Add(this.lbl_fils_flch);
             this.panel_fils.Controls.Add(this.label3);
             this.panel_fils.Location = new System.Drawing.Point(16, 106);
             this.panel_fils.Name = "panel_fils";
             this.panel_fils.Size = new System.Drawing.Size(279, 80);
             this.panel_fils.TabIndex = 0;
             // 
-            // label2
+            // lbl_fils_part
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(171, 11);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 29);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "12";
+            this.lbl_fils_part.AutoSize = true;
+            this.lbl_fils_part.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_fils_part.Location = new System.Drawing.Point(220, 11);
+            this.lbl_fils_part.Name = "lbl_fils_part";
+            this.lbl_fils_part.Size = new System.Drawing.Size(43, 29);
+            this.lbl_fils_part.TabIndex = 0;
+            this.lbl_fils_part.Text = "12";
+            // 
+            // lbl_fils_flch
+            // 
+            this.lbl_fils_flch.AutoSize = true;
+            this.lbl_fils_flch.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_fils_flch.Location = new System.Drawing.Point(171, 11);
+            this.lbl_fils_flch.Name = "lbl_fils_flch";
+            this.lbl_fils_flch.Size = new System.Drawing.Size(43, 29);
+            this.lbl_fils_flch.TabIndex = 0;
+            this.lbl_fils_flch.Text = "12";
             // 
             // label3
             // 
@@ -133,23 +143,33 @@
             // panel_Filles
             // 
             this.panel_Filles.BackColor = System.Drawing.Color.LightGreen;
-            this.panel_Filles.Controls.Add(this.label19);
-            this.panel_Filles.Controls.Add(this.label4);
+            this.panel_Filles.Controls.Add(this.lbl_filles_part);
+            this.panel_Filles.Controls.Add(this.lbl_filles_flch);
             this.panel_Filles.Controls.Add(this.label5);
             this.panel_Filles.Location = new System.Drawing.Point(16, 192);
             this.panel_Filles.Name = "panel_Filles";
             this.panel_Filles.Size = new System.Drawing.Size(279, 80);
             this.panel_Filles.TabIndex = 0;
             // 
-            // label4
+            // lbl_filles_part
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(171, 11);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 29);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "12";
+            this.lbl_filles_part.AutoSize = true;
+            this.lbl_filles_part.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_filles_part.Location = new System.Drawing.Point(220, 11);
+            this.lbl_filles_part.Name = "lbl_filles_part";
+            this.lbl_filles_part.Size = new System.Drawing.Size(43, 29);
+            this.lbl_filles_part.TabIndex = 0;
+            this.lbl_filles_part.Text = "12";
+            // 
+            // lbl_filles_flch
+            // 
+            this.lbl_filles_flch.AutoSize = true;
+            this.lbl_filles_flch.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_filles_flch.Location = new System.Drawing.Point(171, 11);
+            this.lbl_filles_flch.Name = "lbl_filles_flch";
+            this.lbl_filles_flch.Size = new System.Drawing.Size(43, 29);
+            this.lbl_filles_flch.TabIndex = 0;
+            this.lbl_filles_flch.Text = "12";
             // 
             // label5
             // 
@@ -164,23 +184,33 @@
             // panel_Freres
             // 
             this.panel_Freres.BackColor = System.Drawing.Color.LightGreen;
-            this.panel_Freres.Controls.Add(this.label17);
-            this.panel_Freres.Controls.Add(this.label6);
+            this.panel_Freres.Controls.Add(this.lbl_frere_part);
+            this.panel_Freres.Controls.Add(this.lbl_frere_flch);
             this.panel_Freres.Controls.Add(this.label7);
             this.panel_Freres.Location = new System.Drawing.Point(301, 106);
             this.panel_Freres.Name = "panel_Freres";
             this.panel_Freres.Size = new System.Drawing.Size(279, 80);
             this.panel_Freres.TabIndex = 0;
             // 
-            // label6
+            // lbl_frere_part
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(186, 11);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 29);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "12";
+            this.lbl_frere_part.AutoSize = true;
+            this.lbl_frere_part.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_frere_part.Location = new System.Drawing.Point(231, 11);
+            this.lbl_frere_part.Name = "lbl_frere_part";
+            this.lbl_frere_part.Size = new System.Drawing.Size(43, 29);
+            this.lbl_frere_part.TabIndex = 0;
+            this.lbl_frere_part.Text = "12";
+            // 
+            // lbl_frere_flch
+            // 
+            this.lbl_frere_flch.AutoSize = true;
+            this.lbl_frere_flch.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_frere_flch.Location = new System.Drawing.Point(186, 11);
+            this.lbl_frere_flch.Name = "lbl_frere_flch";
+            this.lbl_frere_flch.Size = new System.Drawing.Size(43, 29);
+            this.lbl_frere_flch.TabIndex = 0;
+            this.lbl_frere_flch.Text = "12";
             // 
             // label7
             // 
@@ -195,23 +225,33 @@
             // panel_Soeurs
             // 
             this.panel_Soeurs.BackColor = System.Drawing.Color.LightGreen;
-            this.panel_Soeurs.Controls.Add(this.label20);
-            this.panel_Soeurs.Controls.Add(this.label8);
+            this.panel_Soeurs.Controls.Add(this.lbl_soeurs_part);
+            this.panel_Soeurs.Controls.Add(this.lbl_soeurs_flch);
             this.panel_Soeurs.Controls.Add(this.label9);
             this.panel_Soeurs.Location = new System.Drawing.Point(301, 192);
             this.panel_Soeurs.Name = "panel_Soeurs";
             this.panel_Soeurs.Size = new System.Drawing.Size(279, 80);
             this.panel_Soeurs.TabIndex = 0;
             // 
-            // label8
+            // lbl_soeurs_part
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(186, 11);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 29);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "12";
+            this.lbl_soeurs_part.AutoSize = true;
+            this.lbl_soeurs_part.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_soeurs_part.Location = new System.Drawing.Point(231, 11);
+            this.lbl_soeurs_part.Name = "lbl_soeurs_part";
+            this.lbl_soeurs_part.Size = new System.Drawing.Size(43, 29);
+            this.lbl_soeurs_part.TabIndex = 0;
+            this.lbl_soeurs_part.Text = "12";
+            // 
+            // lbl_soeurs_flch
+            // 
+            this.lbl_soeurs_flch.AutoSize = true;
+            this.lbl_soeurs_flch.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_soeurs_flch.Location = new System.Drawing.Point(186, 11);
+            this.lbl_soeurs_flch.Name = "lbl_soeurs_flch";
+            this.lbl_soeurs_flch.Size = new System.Drawing.Size(43, 29);
+            this.lbl_soeurs_flch.TabIndex = 0;
+            this.lbl_soeurs_flch.Text = "12";
             // 
             // label9
             // 
@@ -226,23 +266,33 @@
             // panel_Pere
             // 
             this.panel_Pere.BackColor = System.Drawing.Color.LightGreen;
-            this.panel_Pere.Controls.Add(this.label18);
-            this.panel_Pere.Controls.Add(this.label10);
+            this.panel_Pere.Controls.Add(this.lbl_pere_part);
+            this.panel_Pere.Controls.Add(this.lbl_pere_fleche);
             this.panel_Pere.Controls.Add(this.label11);
             this.panel_Pere.Location = new System.Drawing.Point(586, 106);
             this.panel_Pere.Name = "panel_Pere";
             this.panel_Pere.Size = new System.Drawing.Size(279, 80);
             this.panel_Pere.TabIndex = 0;
             // 
-            // label10
+            // lbl_pere_part
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(188, 11);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(43, 29);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "12";
+            this.lbl_pere_part.AutoSize = true;
+            this.lbl_pere_part.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pere_part.Location = new System.Drawing.Point(233, 11);
+            this.lbl_pere_part.Name = "lbl_pere_part";
+            this.lbl_pere_part.Size = new System.Drawing.Size(43, 29);
+            this.lbl_pere_part.TabIndex = 0;
+            this.lbl_pere_part.Text = "12";
+            // 
+            // lbl_pere_fleche
+            // 
+            this.lbl_pere_fleche.AutoSize = true;
+            this.lbl_pere_fleche.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pere_fleche.Location = new System.Drawing.Point(188, 11);
+            this.lbl_pere_fleche.Name = "lbl_pere_fleche";
+            this.lbl_pere_fleche.Size = new System.Drawing.Size(43, 29);
+            this.lbl_pere_fleche.TabIndex = 0;
+            this.lbl_pere_fleche.Text = "12";
             // 
             // label11
             // 
@@ -257,23 +307,33 @@
             // panel_Mere
             // 
             this.panel_Mere.BackColor = System.Drawing.Color.LightGreen;
-            this.panel_Mere.Controls.Add(this.label21);
-            this.panel_Mere.Controls.Add(this.label12);
+            this.panel_Mere.Controls.Add(this.lbl_mere_part);
+            this.panel_Mere.Controls.Add(this.lbl_mere_flch);
             this.panel_Mere.Controls.Add(this.label13);
             this.panel_Mere.Location = new System.Drawing.Point(586, 192);
             this.panel_Mere.Name = "panel_Mere";
             this.panel_Mere.Size = new System.Drawing.Size(279, 80);
             this.panel_Mere.TabIndex = 0;
             // 
-            // label12
+            // lbl_mere_part
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(188, 13);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(43, 29);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "12";
+            this.lbl_mere_part.AutoSize = true;
+            this.lbl_mere_part.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_mere_part.Location = new System.Drawing.Point(233, 13);
+            this.lbl_mere_part.Name = "lbl_mere_part";
+            this.lbl_mere_part.Size = new System.Drawing.Size(43, 29);
+            this.lbl_mere_part.TabIndex = 0;
+            this.lbl_mere_part.Text = "12";
+            // 
+            // lbl_mere_flch
+            // 
+            this.lbl_mere_flch.AutoSize = true;
+            this.lbl_mere_flch.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_mere_flch.Location = new System.Drawing.Point(188, 13);
+            this.lbl_mere_flch.Name = "lbl_mere_flch";
+            this.lbl_mere_flch.Size = new System.Drawing.Size(43, 29);
+            this.lbl_mere_flch.TabIndex = 0;
+            this.lbl_mere_flch.Text = "12";
             // 
             // label13
             // 
@@ -288,23 +348,33 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGreen;
-            this.panel1.Controls.Add(this.label22);
-            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.lbl_epouses_part);
+            this.panel1.Controls.Add(this.lbl_epouse_flch);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Location = new System.Drawing.Point(16, 278);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(849, 80);
             this.panel1.TabIndex = 0;
             // 
-            // label14
+            // lbl_epouses_part
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(758, 11);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(43, 29);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "12";
+            this.lbl_epouses_part.AutoSize = true;
+            this.lbl_epouses_part.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_epouses_part.Location = new System.Drawing.Point(803, 11);
+            this.lbl_epouses_part.Name = "lbl_epouses_part";
+            this.lbl_epouses_part.Size = new System.Drawing.Size(43, 29);
+            this.lbl_epouses_part.TabIndex = 0;
+            this.lbl_epouses_part.Text = "12";
+            // 
+            // lbl_epouse_flch
+            // 
+            this.lbl_epouse_flch.AutoSize = true;
+            this.lbl_epouse_flch.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_epouse_flch.Location = new System.Drawing.Point(758, 11);
+            this.lbl_epouse_flch.Name = "lbl_epouse_flch";
+            this.lbl_epouse_flch.Size = new System.Drawing.Size(43, 29);
+            this.lbl_epouse_flch.TabIndex = 0;
+            this.lbl_epouse_flch.Text = "12";
             // 
             // label15
             // 
@@ -315,76 +385,6 @@
             this.label15.Size = new System.Drawing.Size(84, 18);
             this.label15.TabIndex = 0;
             this.label15.Text = "Epouse(s)";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(220, 11);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(43, 29);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "12";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(231, 11);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(43, 29);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "12";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(233, 11);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(43, 29);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "12";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(220, 11);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(43, 29);
-            this.label19.TabIndex = 0;
-            this.label19.Text = "12";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(231, 11);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(43, 29);
-            this.label20.TabIndex = 0;
-            this.label20.Text = "12";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(233, 13);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(43, 29);
-            this.label21.TabIndex = 0;
-            this.label21.Text = "12";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(803, 11);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(43, 29);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "12";
             // 
             // AffichageFinalUC
             // 
@@ -423,35 +423,35 @@
         #endregion
 
         private System.Windows.Forms.Panel panel_origine_matiere;
-        private System.Windows.Forms.Label lbl_numero_matiere;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel_fils;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel_Filles;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel_Freres;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel_Soeurs;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel_Pere;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel_Mere;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
+        public System.Windows.Forms.Label lbl_numero_matiere;
+        public System.Windows.Forms.Label lbl_fils_flch;
+        public System.Windows.Forms.Label lbl_filles_flch;
+        public System.Windows.Forms.Label lbl_frere_flch;
+        public System.Windows.Forms.Label lbl_soeurs_flch;
+        public System.Windows.Forms.Label lbl_pere_fleche;
+        public System.Windows.Forms.Label lbl_mere_flch;
+        public System.Windows.Forms.Label lbl_epouse_flch;
+        public System.Windows.Forms.Label lbl_fils_part;
+        public System.Windows.Forms.Label lbl_filles_part;
+        public System.Windows.Forms.Label lbl_frere_part;
+        public System.Windows.Forms.Label lbl_soeurs_part;
+        public System.Windows.Forms.Label lbl_pere_part;
+        public System.Windows.Forms.Label lbl_mere_part;
+        public System.Windows.Forms.Label lbl_epouses_part;
     }
 }
