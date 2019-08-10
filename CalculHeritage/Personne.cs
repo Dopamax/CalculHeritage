@@ -10,7 +10,10 @@ namespace CalculHeritage
     {
         private string typep;
         private double part;
-
+        /// <summary>
+        /// we need somme variables 
+        /// </summary>
+        static int fils = 0, filles = 0, pere = 0, mere = 0, seour = 0, frere = 0, gpere = 0, gmerep = 0, gmerem = 0, epousse = 0, marie = 0;
 
         public string Typep { get => typep; set => typep = value; }
         public double Part { get => part; set => part = value; }
@@ -66,49 +69,203 @@ namespace CalculHeritage
             return t[0];
         }
 
-        public string Partition_filles(int nombre)
-        {
-            string partition = null;
-            //Ici votre Code
-
-            return partition;
-        }
-
         public string Partition_fils(int nombre)
         {
             string partition = null;
+            fils = nombre;
             //Ici votre Code
-
+            if (nombre>0)
+            {
+                partition= "prend le rest";
+            }
+            return partition;
+        }
+        public string Partition_filles(int nombre)
+        {
+            string partition = null;
+            filles = nombre;
+            //Ici votre Code
+            if (nombre==1 && fils>0)
+            {
+                partition= "prend le reste avec son frere";
+            }
+            else if (nombre==1 && fils==0)
+            {
+                partition= "1/2";
+            }
+            else if (nombre>1 && fils>=0)
+            {
+                partition= "2/3";
+            }
             return partition;
         }
 
-        public string Partition_Grandpere()
+        public string Partition_Pere(bool vivante)
         {
             string partition = null;
+            pere = Convert.ToInt16(vivante);
             //Ici votre Code
-
+            if (vivante)
+            {
+                if (fils>0)
+                {
+                    partition = "1/6";
+                }
+                else if (filles>0)
+                {
+                    partition = "1/6 + le reste";
+                }
+                else
+                {
+                    partition = "prend le reste";
+                }
+            }
             return partition;
         }
-        public string Partition_GrandeMere_matern()
+        public string Partition_Mere(bool vivante)
         {
             string partition = null;
             //Ici votre Code
-
+            if (vivante)
+            {
+                if (fils > 0 || filles>0)
+                {
+                    partition = "1/6";
+                }
+                else
+                {
+                    partition = "1/3";
+                }
+            }
+            return partition;
+        }
+        public string Partition_Grandpere(bool vivante)
+        {
+            string partition = null;
+            gpere = Convert.ToInt16(vivante);
+            //Ici votre Code
+            if (vivante)
+            {
+                if ( (fils>0 || filles>0 || seour>0) && pere==0)
+                {
+                    partition = "1/6";
+                }
+                else if (pere==0)
+                {
+                    partition = "prend le reste";
+                }
+            }
+            return partition;
+        }
+        public string Partition_GrandeMere_matern(bool vivante)
+        {
+            string partition = null;
+            gmerem= Convert.ToInt16(vivante);
+            //Ici votre Code
+            if (vivante)
+            {
+                if (mere==0)
+                {
+                    partition = "1/6";
+                }
+            }
             return partition;
         }
 
-        public string Partition_GrandeMere_patern()
+        public string Partition_GrandeMere_patern(bool vivante)
         {
             string partition = null;
+            gmerep= Convert.ToInt16(vivante);
             //Ici votre Code
-
+            if (vivante)
+            {
+                if (mere==0 && pere==0)
+                {
+                    partition = "1/6";
+                }
+            }
             return partition;
         }
-        public string Partition_Epouses()
+        public string Partition_Frere(int nombre)
         {
             string partition = null;
+            frere = nombre;
             //Ici votre Code
-
+            if (nombre>0)
+            {
+                if (fils==0 && filles==0 && pere==0 && gpere==0)
+                {
+                    if (nombre>1)
+                    {
+                        partition = "prennent le reste";
+                    }
+                    else
+                    {
+                        partition = "prend le reste";
+                    }
+                }
+            }
+            return partition;
+        }
+        public string Partition_Seoure(int nombre)
+        {
+            string partition = null;
+            seour = nombre;
+            //Ici votre Code
+            if (nombre ==0)
+            {
+                if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere == 0)
+                {
+                    partition ="1/2";
+                }
+            }
+            else if (nombre > 1)
+            {
+                if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere == 0)
+                {
+                    partition = "2/3";
+                }
+                else if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere > 0)
+                {
+                    partition = "prennent le rest avec son frere";
+                }
+            }
+            return partition;
+        }
+        public string Partition_Marie(bool vivante)
+        {
+            string partition = null;
+            marie = Convert.ToInt16(vivante);
+            //Ici votre Code
+            if (vivante)
+            {
+                if (fils>0 || filles>0)
+                {
+                    partition = "1/4";
+                }
+                else
+                {
+                    partition = "1/2";
+                }
+            }
+            return partition;
+        }
+        public string Partition_Epouses(int nombre)
+        {
+            string partition = null;
+            epousse = nombre;
+            //Ici votre Code
+            if (nombre>0)
+            {
+                if (fils>0 || filles>0)
+                {
+                    partition = "1/8";
+                }
+                else
+                {
+                    partition = "1/4";
+                }
+            }
             return partition;
         }
 
