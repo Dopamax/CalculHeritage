@@ -34,8 +34,8 @@
             this.btn_Suivant = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_precedant = new Bunifu.Framework.UI.BunifuFlatButton();
             this.affichageFinalUC1 = new CalculHeritage.AffichageFinalUC();
-            this.donneeFemmeUC1 = new CalculHeritage.DonneeFemmeUC();
             this.donneeHommeUC1 = new CalculHeritage.DonneeHommeUC();
+            this.donneeFemmeUC1 = new CalculHeritage.DonneeFemmeUC();
             this.question1CU1 = new CalculHeritage.Question1CU();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -108,6 +108,7 @@
             this.btn_Suivant.IconZoom = 90D;
             this.btn_Suivant.IsTab = false;
             this.btn_Suivant.Location = new System.Drawing.Point(655, 437);
+            this.btn_Suivant.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btn_Suivant.Name = "btn_Suivant";
             this.btn_Suivant.Normalcolor = System.Drawing.SystemColors.Highlight;
             this.btn_Suivant.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -144,6 +145,7 @@
             this.btn_precedant.IconZoom = 90D;
             this.btn_precedant.IsTab = false;
             this.btn_precedant.Location = new System.Drawing.Point(27, 441);
+            this.btn_precedant.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btn_precedant.Name = "btn_precedant";
             this.btn_precedant.Normalcolor = System.Drawing.SystemColors.Highlight;
             this.btn_precedant.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -164,14 +166,6 @@
             this.affichageFinalUC1.Size = new System.Drawing.Size(895, 388);
             this.affichageFinalUC1.TabIndex = 8;
             // 
-            // donneeFemmeUC1
-            // 
-            this.donneeFemmeUC1.BackColor = System.Drawing.Color.White;
-            this.donneeFemmeUC1.Location = new System.Drawing.Point(1, 34);
-            this.donneeFemmeUC1.Name = "donneeFemmeUC1";
-            this.donneeFemmeUC1.Size = new System.Drawing.Size(895, 388);
-            this.donneeFemmeUC1.TabIndex = 7;
-            // 
             // donneeHommeUC1
             // 
             this.donneeHommeUC1.BackColor = System.Drawing.Color.White;
@@ -179,6 +173,14 @@
             this.donneeHommeUC1.Name = "donneeHommeUC1";
             this.donneeHommeUC1.Size = new System.Drawing.Size(895, 388);
             this.donneeHommeUC1.TabIndex = 6;
+            // 
+            // donneeFemmeUC1
+            // 
+            this.donneeFemmeUC1.BackColor = System.Drawing.Color.White;
+            this.donneeFemmeUC1.Location = new System.Drawing.Point(1, 34);
+            this.donneeFemmeUC1.Name = "donneeFemmeUC1";
+            this.donneeFemmeUC1.Size = new System.Drawing.Size(895, 388);
+            this.donneeFemmeUC1.TabIndex = 7;
             // 
             // question1CU1
             // 
@@ -203,6 +205,10 @@
             this.Controls.Add(this.question1CU1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bunifuFlatButton1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1215, 544);
+            this.MinimumSize = new System.Drawing.Size(1215, 544);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calcul d\'Héritage";
