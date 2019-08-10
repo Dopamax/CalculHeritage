@@ -14,6 +14,7 @@ namespace CalculHeritage
         /// we need somme variables 
         /// </summary>
         int fils = 0, filles = 0, pere = 0, mere = 0, seour = 0, frere = 0, gpere = 0, gmerep = 0, gmerem = 0, epousse = 0, marie = 0;
+        int Mfils = 0, Mfilles = 0, Mpere = 0, Mmere = 0, Mseour = 0, Mfrere = 0, Mgpere = 0, Mgmerep = 0, Mgmerem = 0, Mepousse = 0, Mmarie = 0;
 
         public string Typep { get => typep; set => typep = value; }
         public double Part { get => part; set => part = value; }
@@ -92,10 +93,12 @@ namespace CalculHeritage
             else if (nombre==1 && fils==0)
             {
                 partition= "1/2";
+                Mfilles = 2;
             }
             else if (nombre>1 && fils>=0)
             {
                 partition= "2/3";
+                Mfilles = 3;
             }
             return partition;
         }
@@ -110,10 +113,12 @@ namespace CalculHeritage
                 if (fils>0)
                 {
                     partition = "1/6";
+                    Mpere = 6;
                 }
                 else if (filles>0)
                 {
                     partition = "1/6 + le reste";
+                    Mpere=6;
                 }
                 else
                 {
@@ -131,10 +136,12 @@ namespace CalculHeritage
                 if (fils > 0 || filles>0)
                 {
                     partition = "1/6";
+                    Mmere = 6;
                 }
                 else
                 {
                     partition = "1/3";
+                    Mmere = 6;
                 }
             }
             return partition;
@@ -149,6 +156,7 @@ namespace CalculHeritage
                 if ( (fils>0 || filles>0 || seour>0) && pere==0)
                 {
                     partition = "1/6";
+                    Mgpere = 6;
                 }
                 else if (pere==0)
                 {
@@ -167,6 +175,7 @@ namespace CalculHeritage
                 if (mere==0)
                 {
                     partition = "1/6";
+                    Mgmerem = 6;
                 }
             }
             return partition;
@@ -182,6 +191,7 @@ namespace CalculHeritage
                 if (mere==0 && pere==0)
                 {
                     partition = "1/6";
+                    Mgmerep = 6;
                 }
             }
             return partition;
@@ -217,6 +227,7 @@ namespace CalculHeritage
                 if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere == 0)
                 {
                     partition ="1/2";
+                    Mseour = 2;
                 }
             }
             else if (nombre > 1)
@@ -224,6 +235,7 @@ namespace CalculHeritage
                 if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere == 0)
                 {
                     partition = "2/3";
+                    Mseour = 3;
                 }
                 else if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere > 0)
                 {
@@ -242,10 +254,12 @@ namespace CalculHeritage
                 if (fils>0 || filles>0)
                 {
                     partition = "1/4";
+                    Mmarie = 4;
                 }
                 else
                 {
                     partition = "1/2";
+                    Mmarie = 2;
                 }
             }
             return partition;
@@ -260,10 +274,12 @@ namespace CalculHeritage
                 if (fils>0 || filles>0)
                 {
                     partition = "1/8";
+                    Mepousse = 8;
                 }
                 else
                 {
                     partition = "1/4";
+                    Mepousse = 4;
                 }
             }
             return partition;
