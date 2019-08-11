@@ -72,6 +72,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
     <Compile Include="AffichageFinalUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -90,11 +96,11 @@
     <Compile Include="DonneeHommeUC.Designer.cs">
       <DependentUpon>DonneeHommeUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Form_Principale.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Form_Principale.Designer.cs">
+      <DependentUpon>Form_Principale.cs</DependentUpon>
     </Compile>
     <Compile Include="Personne.cs" />
     <Compile Include="Program.cs" />
@@ -105,6 +111,9 @@
     <Compile Include="Question1CU.Designer.cs">
       <DependentUpon>Question1CU.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AffichageFinalUC.resx">
       <DependentUpon>AffichageFinalUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,8 +123,8 @@
     <EmbeddedResource Include="DonneeHommeUC.resx">
       <DependentUpon>DonneeHommeUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Principale.resx">
+      <DependentUpon>Form_Principale.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

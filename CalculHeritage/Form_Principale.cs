@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CalculHeritage
 {
-    public partial class Form1 : Form
+    public partial class Form_Principale : Form
     {
-        public Form1()
+        public Form_Principale()
         {
             InitializeComponent();
             question1CU1.BringToFront();
@@ -213,6 +213,12 @@ namespace CalculHeritage
 
             }
             
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            About a = new About();
+            a.Show();
         }
     }
 }
