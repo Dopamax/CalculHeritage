@@ -77,11 +77,11 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::CalculHeritage.Properties.Resources.background_with_advocacy_elements_23_2147802094;
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
             this.pictureBox1.Location = new System.Drawing.Point(902, 40);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(285, 389);
+            this.pictureBox1.Size = new System.Drawing.Size(285, 453);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -177,7 +177,7 @@
             // 
             // donneeFemmeUC1
             // 
-            this.donneeFemmeUC1.BackColor = System.Drawing.Color.White;
+            this.donneeFemmeUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(242)))), ((int)(((byte)(227)))));
             this.donneeFemmeUC1.Location = new System.Drawing.Point(1, 34);
             this.donneeFemmeUC1.Name = "donneeFemmeUC1";
             this.donneeFemmeUC1.Size = new System.Drawing.Size(895, 388);
@@ -185,7 +185,7 @@
             // 
             // question1CU1
             // 
-            this.question1CU1.BackColor = System.Drawing.Color.White;
+            this.question1CU1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(242)))), ((int)(((byte)(227)))));
             this.question1CU1.Location = new System.Drawing.Point(7, 43);
             this.question1CU1.Name = "question1CU1";
             this.question1CU1.Size = new System.Drawing.Size(895, 388);
@@ -195,7 +195,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(242)))), ((int)(((byte)(227)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1199, 505);
             this.Controls.Add(this.affichageFinalUC1);
@@ -206,8 +206,7 @@
             this.Controls.Add(this.question1CU1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bunifuFlatButton1);
-            this.Name = "Form_Principale";
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calcul d\'Héritage";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
