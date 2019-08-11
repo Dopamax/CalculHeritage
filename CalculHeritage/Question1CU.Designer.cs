@@ -38,10 +38,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(320, 89);
+            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(259, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(245, 25);
+            this.label1.Size = new System.Drawing.Size(376, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "Veuillez choisir le sexe du defunt ?";
             // 
@@ -82,7 +82,7 @@
             // txt_Somme
             // 
             this.txt_Somme.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_Somme.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_Somme.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txt_Somme.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txt_Somme.HintForeColor = System.Drawing.Color.Empty;
             this.txt_Somme.HintText = "Somme";
