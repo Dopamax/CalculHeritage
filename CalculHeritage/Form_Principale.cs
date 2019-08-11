@@ -19,7 +19,7 @@ namespace CalculHeritage
             btn_precedant.Enabled = false;
         }
         int pos = 0;
-        Personne p = new Personne();
+        Partition p = new Partition();
   
         string usercontrol_genre="";
         public void Navigation(int pos)

@@ -87,9 +87,8 @@
             this.lbl_numero_matiere.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_numero_matiere.Location = new System.Drawing.Point(233, 40);
             this.lbl_numero_matiere.Name = "lbl_numero_matiere";
-            this.lbl_numero_matiere.Size = new System.Drawing.Size(43, 29);
+            this.lbl_numero_matiere.Size = new System.Drawing.Size(0, 29);
             this.lbl_numero_matiere.TabIndex = 0;
-            this.lbl_numero_matiere.Text = "12";
             // 
             // label1
             // 
@@ -128,9 +127,8 @@
             this.lbl_fils_flch.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_fils_flch.Location = new System.Drawing.Point(171, 11);
             this.lbl_fils_flch.Name = "lbl_fils_flch";
-            this.lbl_fils_flch.Size = new System.Drawing.Size(43, 29);
+            this.lbl_fils_flch.Size = new System.Drawing.Size(0, 29);
             this.lbl_fils_flch.TabIndex = 0;
-            this.lbl_fils_flch.Text = "12";
             // 
             // label3
             // 
@@ -169,9 +167,8 @@
             this.lbl_filles_flch.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_filles_flch.Location = new System.Drawing.Point(171, 11);
             this.lbl_filles_flch.Name = "lbl_filles_flch";
-            this.lbl_filles_flch.Size = new System.Drawing.Size(43, 29);
+            this.lbl_filles_flch.Size = new System.Drawing.Size(0, 29);
             this.lbl_filles_flch.TabIndex = 0;
-            this.lbl_filles_flch.Text = "12";
             // 
             // label5
             // 
@@ -210,9 +207,8 @@
             this.lbl_frere_flch.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_frere_flch.Location = new System.Drawing.Point(186, 11);
             this.lbl_frere_flch.Name = "lbl_frere_flch";
-            this.lbl_frere_flch.Size = new System.Drawing.Size(43, 29);
+            this.lbl_frere_flch.Size = new System.Drawing.Size(0, 29);
             this.lbl_frere_flch.TabIndex = 0;
-            this.lbl_frere_flch.Text = "12";
             // 
             // label7
             // 
@@ -251,9 +247,8 @@
             this.lbl_soeurs_flch.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_soeurs_flch.Location = new System.Drawing.Point(186, 11);
             this.lbl_soeurs_flch.Name = "lbl_soeurs_flch";
-            this.lbl_soeurs_flch.Size = new System.Drawing.Size(43, 29);
+            this.lbl_soeurs_flch.Size = new System.Drawing.Size(0, 29);
             this.lbl_soeurs_flch.TabIndex = 0;
-            this.lbl_soeurs_flch.Text = "12";
             // 
             // label9
             // 
@@ -292,9 +287,8 @@
             this.lbl_pere_fleche.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_pere_fleche.Location = new System.Drawing.Point(188, 11);
             this.lbl_pere_fleche.Name = "lbl_pere_fleche";
-            this.lbl_pere_fleche.Size = new System.Drawing.Size(43, 29);
+            this.lbl_pere_fleche.Size = new System.Drawing.Size(0, 29);
             this.lbl_pere_fleche.TabIndex = 0;
-            this.lbl_pere_fleche.Text = "12";
             // 
             // label11
             // 
@@ -333,9 +327,8 @@
             this.lbl_mere_flch.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_mere_flch.Location = new System.Drawing.Point(188, 13);
             this.lbl_mere_flch.Name = "lbl_mere_flch";
-            this.lbl_mere_flch.Size = new System.Drawing.Size(43, 29);
+            this.lbl_mere_flch.Size = new System.Drawing.Size(0, 29);
             this.lbl_mere_flch.TabIndex = 0;
-            this.lbl_mere_flch.Text = "12";
             // 
             // label13
             // 
@@ -374,9 +367,8 @@
             this.lbl_epouse_flch.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_epouse_flch.Location = new System.Drawing.Point(758, 11);
             this.lbl_epouse_flch.Name = "lbl_epouse_flch";
-            this.lbl_epouse_flch.Size = new System.Drawing.Size(43, 29);
+            this.lbl_epouse_flch.Size = new System.Drawing.Size(0, 29);
             this.lbl_epouse_flch.TabIndex = 0;
-            this.lbl_epouse_flch.Text = "12";
             // 
             // lbl_epouse_ou_marie
             // 

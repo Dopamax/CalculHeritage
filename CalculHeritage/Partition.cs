@@ -6,27 +6,15 @@ using System.Threading.Tasks;
 
 namespace CalculHeritage
 {
-    public class Personne
+    public class Partition
     {
-        private string typep;
-        private double part;
         /// <summary>
         /// we need somme variables 
         /// </summary>
         int fils = 0, filles = 0, pere = 0, mere = 0, seour = 0, frere = 0, gpere = 0, gmerep = 0, gmerem = 0, epousse = 0, marie = 0;
         int Mfils = 0, Mfilles = 0, Mpere = 0, Mmere = 0, Mseour = 0, Mfrere = 0, Mgpere = 0, Mgmerep = 0, Mgmerem = 0, Mepousse = 0, Mmarie = 0;
 
-        public string Typep { get => typep; set => typep = value; }
-        public double Part { get => part; set => part = value; }
-
-        public Personne(string typep, double part)
-
-        {
-            this.Typep = typep;
-            this.Part = part;
-        }
-
-        public Personne()
+        public Partition()
         {
 
         }
@@ -74,10 +62,10 @@ namespace CalculHeritage
         {
             string partition = null;
             fils = nombre;
-            //Ici votre Code
+            
             if (nombre>0)
             {
-                partition= "prend le rest";
+                partition= "R";
             }
             return partition;
         }
@@ -85,7 +73,7 @@ namespace CalculHeritage
         {
             string partition = null;
             filles = nombre;
-            //Ici votre Code
+            
             if (nombre==1 && fils>0)
             {
                 partition= "RF";
@@ -107,7 +95,7 @@ namespace CalculHeritage
         {
             string partition = null;
             pere = Convert.ToInt16(vivant);
-            //Ici votre Code
+           
             if (vivant)
             {
                 if (fils>0)
@@ -130,7 +118,7 @@ namespace CalculHeritage
         public string Partition_Mere(bool vivante)
         {
             string partition = null;
-            //Ici votre Code
+            
             if (vivante)
             {
                 if (fils > 0 || filles>0)
@@ -150,7 +138,7 @@ namespace CalculHeritage
         {
             string partition = null;
             gpere = Convert.ToInt16(vivante);
-            //Ici votre Code
+           
             if (vivante)
             {
                 if ( (fils>0 || filles>0 || seour>0) && pere==0)
@@ -169,7 +157,7 @@ namespace CalculHeritage
         {
             string partition = null;
             gmerem= Convert.ToInt16(vivante);
-            //Ici votre Code
+           
             if (vivante)
             {
                 if (mere==0)
@@ -185,7 +173,7 @@ namespace CalculHeritage
         {
             string partition = null;
             gmerep= Convert.ToInt16(vivante);
-            //Ici votre Code
+            
             if (vivante)
             {
                 if (mere==0 && pere==0)
@@ -200,7 +188,7 @@ namespace CalculHeritage
         {
             string partition = null;
             frere = nombre;
-            //Ici votre Code
+            
             if (nombre>0)
             {
                 if (fils==0 && filles==0 && pere==0 && gpere==0)
@@ -221,7 +209,7 @@ namespace CalculHeritage
         {
             string partition = null;
             seour = nombre;
-            //Ici votre Code
+           
             if (nombre ==0)
             {
                 if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere == 0)
@@ -248,7 +236,7 @@ namespace CalculHeritage
         {
             string partition = null;
             marie = Convert.ToInt16(vivante);
-            //Ici votre Code
+       
             if (vivante)
             {
                 if (fils>0 || filles>0)
@@ -268,7 +256,7 @@ namespace CalculHeritage
         {
             string partition = null;
             epousse = nombre;
-            //Ici votre Code
+          
             if (nombre>0)
             {
                 if (fils>0 || filles>0)
