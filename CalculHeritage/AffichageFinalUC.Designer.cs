@@ -55,10 +55,12 @@
             this.lbl_mere_part = new System.Windows.Forms.Label();
             this.lbl_mere_flch = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel_epouse_ou_marie = new System.Windows.Forms.Panel();
             this.lbl_epouses_part = new System.Windows.Forms.Label();
             this.lbl_epouse_flch = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.lbl_epouse_ou_marie = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel_origine_matiere.SuspendLayout();
             this.panel_fils.SuspendLayout();
             this.panel_Filles.SuspendLayout();
@@ -66,7 +68,7 @@
             this.panel_Soeurs.SuspendLayout();
             this.panel_Pere.SuspendLayout();
             this.panel_Mere.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panel_epouse_ou_marie.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_origine_matiere
@@ -345,16 +347,16 @@
             this.label13.TabIndex = 0;
             this.label13.Text = "Mére";
             // 
-            // panel1
+            // panel_epouse_ou_marie
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightGreen;
-            this.panel1.Controls.Add(this.lbl_epouses_part);
-            this.panel1.Controls.Add(this.lbl_epouse_flch);
-            this.panel1.Controls.Add(this.label15);
-            this.panel1.Location = new System.Drawing.Point(16, 278);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(849, 80);
-            this.panel1.TabIndex = 0;
+            this.panel_epouse_ou_marie.BackColor = System.Drawing.Color.LightGreen;
+            this.panel_epouse_ou_marie.Controls.Add(this.lbl_epouses_part);
+            this.panel_epouse_ou_marie.Controls.Add(this.lbl_epouse_flch);
+            this.panel_epouse_ou_marie.Controls.Add(this.lbl_epouse_ou_marie);
+            this.panel_epouse_ou_marie.Location = new System.Drawing.Point(16, 278);
+            this.panel_epouse_ou_marie.Name = "panel_epouse_ou_marie";
+            this.panel_epouse_ou_marie.Size = new System.Drawing.Size(849, 80);
+            this.panel_epouse_ou_marie.TabIndex = 0;
             // 
             // lbl_epouses_part
             // 
@@ -376,22 +378,44 @@
             this.lbl_epouse_flch.TabIndex = 0;
             this.lbl_epouse_flch.Text = "12";
             // 
-            // label15
+            // lbl_epouse_ou_marie
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(17, 22);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(84, 18);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "Epouse(s)";
+            this.lbl_epouse_ou_marie.AutoSize = true;
+            this.lbl_epouse_ou_marie.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_epouse_ou_marie.Location = new System.Drawing.Point(17, 22);
+            this.lbl_epouse_ou_marie.Name = "lbl_epouse_ou_marie";
+            this.lbl_epouse_ou_marie.Size = new System.Drawing.Size(84, 18);
+            this.lbl_epouse_ou_marie.TabIndex = 0;
+            this.lbl_epouse_ou_marie.Text = "Epouse(s)";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(309, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(159, 26);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "R: prends le reste";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(298, 64);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(292, 26);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "RF: prends le reste avec son frére";
             // 
             // AffichageFinalUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel_Filles);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel_epouse_ou_marie);
             this.Controls.Add(this.panel_Mere);
             this.Controls.Add(this.panel_Soeurs);
             this.Controls.Add(this.panel_Pere);
@@ -414,9 +438,10 @@
             this.panel_Pere.PerformLayout();
             this.panel_Mere.ResumeLayout(false);
             this.panel_Mere.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panel_epouse_ou_marie.ResumeLayout(false);
+            this.panel_epouse_ou_marie.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -436,8 +461,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel_Mere;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label15;
         public System.Windows.Forms.Label lbl_numero_matiere;
         public System.Windows.Forms.Label lbl_fils_flch;
         public System.Windows.Forms.Label lbl_filles_flch;
@@ -453,5 +476,9 @@
         public System.Windows.Forms.Label lbl_pere_part;
         public System.Windows.Forms.Label lbl_mere_part;
         public System.Windows.Forms.Label lbl_epouses_part;
+        public System.Windows.Forms.Panel panel_epouse_ou_marie;
+        public System.Windows.Forms.Label lbl_epouse_ou_marie;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -19,9 +19,9 @@ namespace CalculHeritage
             btn_precedant.Enabled = false;
         }
         int pos = 0;
-        int fils = 0, filles = 0, pere = 0, mere = 0, seour = 0, frere = 0, gpere = 0, gmerep = 0, gmerem = 0, epousse = 0, marie = 0;
-        int Mfils = 0, Mfilles = 0, Mpere = 0, Mmere = 0, Mseour = 0, Mfrere = 0, Mgpere = 0, Mgmerep = 0, Mgmerem = 0, Mepousse = 0, Mmarie = 0;
-
+        Personne p = new Personne();
+  
+        string usercontrol_genre="";
         public void Navigation(int pos)
         {
             switch (pos)
@@ -37,26 +37,64 @@ namespace CalculHeritage
                     {
                         if (question1CU1.rdbtn_Homme.Checked)
                         {
+                            usercontrol_genre = "H";
                             donneeHommeUC1.BringToFront();
                             btn_precedant.Enabled = true;
                             btn_Suivant.Enabled = true;
                             break;
                         }
-                        else
+                        else if (question1CU1.rdbtn_Femme.Checked)
                         {
+                            usercontrol_genre = "F";
                             donneeFemmeUC1.BringToFront();
                             btn_precedant.Enabled = true;
                             btn_Suivant.Enabled = true;
                             break;
 
                         }
-                       
+                        break;
                     }
                 case 2:
                     {
-                        affichageFinalUC1.BringToFront();
-                        btn_precedant.Enabled = true;
-                        btn_Suivant.Enabled = false;
+                        if (usercontrol_genre=="H")
+                        {
+                            if (VerificationRemplissage(donneeHommeUC1))
+                            {
+                                affichageFinalUC1.BringToFront();
+                                Affichage_Final();
+                                btn_precedant.Enabled = true;
+                                btn_Suivant.Enabled = false;
+                                
+                            }
+                            else
+                            {
+                                MessageBox.Show("Veuillez Verifier le remplissage de tous les champs !");
+                                usercontrol_genre = "";
+                                --pos;
+                                
+                            }
+                            
+                        }
+                        else if (usercontrol_genre=="F")
+                        {
+                            if (VerificationRemplissage(donneeFemmeUC1))
+                            {
+                                affichageFinalUC1.BringToFront();
+                                Affichage_Final();
+                                btn_precedant.Enabled = true;
+                                btn_Suivant.Enabled = false;
+                                
+
+                            }
+                            else
+                            {
+                                MessageBox.Show("Veuillez Verifier le remplissage de tous les champs !");
+                                usercontrol_genre = "";
+                                --pos;
+                            }
+
+                        }
+
                         break;
                     }
 
@@ -76,10 +114,105 @@ namespace CalculHeritage
                 Navigation(--pos);
             }
         }
+        public bool VerificationRemplissage(UserControl uc)
+        {
+            bool verification_rdbtn = false;
+            bool verification_txt = false;
+
+            foreach (Control item_grb in uc.Controls)
+            {
+                if (item_grb is GroupBox  )
+                {
+                    foreach (RadioButton item_rdbtn in item_grb.Controls)
+                    {
+                        if (item_rdbtn.Checked)
+                        {
+                            verification_rdbtn = true;
+                            break;
+                        }
+
+                    }
+                    if (!verification_rdbtn)
+                    {
+                        //MessageBox.Show("Test");
+                        return false;
+                    }
+                }
+               /* else
+                {
+                    MessageBox.Show("is not a group");
+                }
+                */
+                    
+            }
+
+            foreach (Control c in uc.Controls )
+            {
+                if (c is Bunifu.Framework.UI.BunifuMaterialTextbox)
+                {
+                    if (c.Text != null)
+                    {
+                        verification_txt = true;
+                    }
+                    else
+                    {
+                        verification_txt = false;
+                    }
+
+                }
+               
+                
+
+            }
+
+
+            return verification_txt && verification_rdbtn;
+           
+        }
+
+        public bool VerifierVivant(RadioButton rd_oui,RadioButton rd_non)
+        {
+            bool vivant = true;
+            if (rd_oui.Checked)
+            {
+                vivant = true;
+            }
+            else
+            {
+                vivant = false;
+            }
+            return vivant;
+        }
 
         public void Affichage_Final()
         {
+            if (question1CU1.rdbtn_Homme.Checked)
+            {
+                affichageFinalUC1.lbl_numero_matiere.Text = p.OrigineDeLaMAtiere();
+                //Partition
+                affichageFinalUC1.lbl_fils_part.Text = p.Partition_fils(int.Parse(donneeHommeUC1.txt_nombrefils.Text));
+                affichageFinalUC1.lbl_filles_part.Text = p.Partition_filles(int.Parse(donneeHommeUC1.txt_nombrefille.Text));
+                affichageFinalUC1.lbl_frere_part.Text = p.Partition_Frere(int.Parse(donneeHommeUC1.txt_nombrefreres.Text));
+                affichageFinalUC1.lbl_soeurs_part.Text = p.Partition_Soeurs(int.Parse(donneeHommeUC1.txt_nombreSoeurs.Text));
+                affichageFinalUC1.lbl_pere_part.Text = p.Partition_Pere(VerifierVivant(donneeHommeUC1.rdbtn_p_oui,donneeHommeUC1.rdbtn_p_non));
+                affichageFinalUC1.lbl_mere_part.Text = p.Partition_Mere(VerifierVivant(donneeHommeUC1.rdbtn_m_oui, donneeHommeUC1.rdbtn_m_non));
+                affichageFinalUC1.lbl_epouses_part.Text = p.Partition_Epouses(int.Parse(donneeHommeUC1.txt_nombrepouse.Text));
+                affichageFinalUC1.lbl_epouse_ou_marie.Text = "Epouse(s)";
 
+            }
+            else if (question1CU1.rdbtn_Femme.Checked)
+            {
+                //Partition
+                affichageFinalUC1.lbl_fils_part.Text = p.Partition_fils(int.Parse(donneeFemmeUC1.txt_nombrefils.Text));
+                affichageFinalUC1.lbl_filles_part.Text = p.Partition_filles(int.Parse(donneeFemmeUC1.txt_nombrefille.Text));
+                affichageFinalUC1.lbl_frere_part.Text = p.Partition_Frere(int.Parse(donneeFemmeUC1.txt_nombrefreres.Text));
+                affichageFinalUC1.lbl_soeurs_part.Text = p.Partition_Soeurs(int.Parse(donneeFemmeUC1.txt_nombreSoeurs.Text));
+                affichageFinalUC1.lbl_pere_part.Text = p.Partition_Pere(VerifierVivant(donneeFemmeUC1.rdbtn_p_oui, donneeFemmeUC1.rdbtn_p_non));
+                affichageFinalUC1.lbl_mere_part.Text = p.Partition_Mere(VerifierVivant(donneeFemmeUC1.rdbtn_m_oui, donneeFemmeUC1.rdbtn_m_non));
+                affichageFinalUC1.lbl_epouse_ou_marie.Text = "Marie";
+
+            }
+            
         }
     }
 }

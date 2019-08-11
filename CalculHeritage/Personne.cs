@@ -88,7 +88,7 @@ namespace CalculHeritage
             //Ici votre Code
             if (nombre==1 && fils>0)
             {
-                partition= "prend le reste avec son frere";
+                partition= "RF";
             }
             else if (nombre==1 && fils==0)
             {
@@ -103,12 +103,12 @@ namespace CalculHeritage
             return partition;
         }
 
-        public string Partition_Pere(bool vivante)
+        public string Partition_Pere(bool vivant)
         {
             string partition = null;
-            pere = Convert.ToInt16(vivante);
+            pere = Convert.ToInt16(vivant);
             //Ici votre Code
-            if (vivante)
+            if (vivant)
             {
                 if (fils>0)
                 {
@@ -117,12 +117,12 @@ namespace CalculHeritage
                 }
                 else if (filles>0)
                 {
-                    partition = "1/6 + le reste";
+                    partition = "1/6 + R";
                     Mpere=6;
                 }
                 else
                 {
-                    partition = "prend le reste";
+                    partition = "R";
                 }
             }
             return partition;
@@ -160,7 +160,7 @@ namespace CalculHeritage
                 }
                 else if (pere==0)
                 {
-                    partition = "prend le reste";
+                    partition = "R";
                 }
             }
             return partition;
@@ -207,17 +207,17 @@ namespace CalculHeritage
                 {
                     if (nombre>1)
                     {
-                        partition = "prennent le reste";
+                        partition = "R";
                     }
                     else
                     {
-                        partition = "prend le reste";
+                        partition = "R";
                     }
                 }
             }
             return partition;
         }
-        public string Partition_Seoure(int nombre)
+        public string Partition_Soeurs(int nombre)
         {
             string partition = null;
             seour = nombre;
@@ -239,7 +239,7 @@ namespace CalculHeritage
                 }
                 else if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere > 0)
                 {
-                    partition = "prennent le rest avec son frere";
+                    partition = "RF";
                 }
             }
             return partition;
