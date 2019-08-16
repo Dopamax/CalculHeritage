@@ -11,12 +11,19 @@ namespace CalculHeritage
         /// <summary>
         /// we need somme variables 
         /// </summary>
+        /// 
+        
         int fils = 0, filles = 0, pere = 0, mere = 0, seour = 0, frere = 0, gpere = 0, gmerep = 0, gmerem = 0, epousse = 0, marie = 0;
         int Mfils = 0, Mfilles = 0, Mpere = 0, Mmere = 0, Mseour = 0, Mfrere = 0, Mgpere = 0, Mgmerep = 0, Mgmerem = 0, Mepousse = 0, Mmarie = 0;
 
         public Partition()
         {
 
+        }
+
+        public Partition(List<int> membre)
+        {
+            membres = AjouterMembre();
         }
 
         public int lcm(int[] t, int n)
@@ -288,6 +295,34 @@ namespace CalculHeritage
             {
                 System.Windows.Forms.MessageBox.Show("Hello");
             }
+
+            
+
         }
+
+           public List<int> membres = new List<int>();
+                
+            public List<int> m = new List<int>();
+       
+        public List<int> AjouterMembre()
+        {
+            List<int> membre = membres;
+            membres.Add(fils );
+            membres.Add(filles);
+            membres.Add(pere);
+            membres.Add( mere);
+            membres.Add( seour);
+            membres.Add(frere);
+            membres.Add(gpere);
+            membres.Add( gmerep);
+            membres.Add(gmerem);
+            membres.Add(epousse);
+            membres.Add(marie);
+            
+            return membre;
+            
+        }
+
+       
     }
 }
