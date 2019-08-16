@@ -169,7 +169,7 @@
             // 
             // donneeHommeUC1
             // 
-            this.donneeHommeUC1.BackColor = System.Drawing.Color.White;
+            this.donneeHommeUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(242)))), ((int)(((byte)(227)))));
             this.donneeHommeUC1.Location = new System.Drawing.Point(1, 43);
             this.donneeHommeUC1.Name = "donneeHommeUC1";
             this.donneeHommeUC1.Size = new System.Drawing.Size(895, 388);
@@ -206,13 +206,12 @@
             this.Controls.Add(this.question1CU1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bunifuFlatButton1);
-            this.Name = "Form_Principale";
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1215, 544);
             this.MinimumSize = new System.Drawing.Size(1215, 544);
-            this.Name = "Form1";
+            this.Name = "Form_Principale";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calcul d\'Héritage";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
