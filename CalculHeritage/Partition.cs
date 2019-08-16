@@ -15,10 +15,11 @@ namespace CalculHeritage
         
         int fils = 0, filles = 0, pere = 0, mere = 0, seour = 0, frere = 0, gpere = 0, gmerep = 0, gmerem = 0, epousse = 0, marie = 0;
         int Mfils = 0, Mfilles = 0, Mpere = 0, Mmere = 0, Mseour = 0, Mfrere = 0, Mgpere = 0, Mgmerep = 0, Mgmerem = 0, Mepousse = 0, Mmarie = 0;
-
+        List<int> menbres = new List<int>();
+        
         public Partition()
         {
-
+            
         }
 
         public Partition(List<int> membre)
