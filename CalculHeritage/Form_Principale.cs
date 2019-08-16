@@ -158,16 +158,9 @@ namespace CalculHeritage
                     {
                         verification_txt = false;
                     }
-
-                }
-               
-                
-
+                }               
             }
-
-
             return verification_txt && verification_rdbtn;
-           
         }
 
         public bool VerifierVivant(RadioButton rd_oui,RadioButton rd_non)
