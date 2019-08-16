@@ -37,37 +37,37 @@
             this.lbl_fils_flch = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel_Filles = new System.Windows.Forms.Panel();
+            this.lbl_sommefilles = new System.Windows.Forms.Label();
             this.lbl_filles_part = new System.Windows.Forms.Label();
             this.lbl_filles_flch = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel_Freres = new System.Windows.Forms.Panel();
+            this.lbl_sommefrere = new System.Windows.Forms.Label();
             this.lbl_frere_part = new System.Windows.Forms.Label();
             this.lbl_frere_flch = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel_Soeurs = new System.Windows.Forms.Panel();
+            this.lbl_sommesoeur = new System.Windows.Forms.Label();
             this.lbl_soeurs_part = new System.Windows.Forms.Label();
             this.lbl_soeurs_flch = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel_Pere = new System.Windows.Forms.Panel();
+            this.lbl_sommepere = new System.Windows.Forms.Label();
             this.lbl_pere_part = new System.Windows.Forms.Label();
             this.lbl_pere_fleche = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel_Mere = new System.Windows.Forms.Panel();
+            this.lbl_sommemere = new System.Windows.Forms.Label();
             this.lbl_mere_part = new System.Windows.Forms.Label();
             this.lbl_mere_flch = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel_epouse_ou_marie = new System.Windows.Forms.Panel();
+            this.lbl_somme_epou_marie = new System.Windows.Forms.Label();
             this.lbl_epouses_part = new System.Windows.Forms.Label();
             this.lbl_epouse_flch = new System.Windows.Forms.Label();
             this.lbl_epouse_ou_marie = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.lbl_sommepere = new System.Windows.Forms.Label();
-            this.lbl_sommefrere = new System.Windows.Forms.Label();
-            this.lbl_sommesoeur = new System.Windows.Forms.Label();
-            this.lbl_sommemere = new System.Windows.Forms.Label();
-            this.lbl_sommefilles = new System.Windows.Forms.Label();
-            this.lbl_somme_epou_marie = new System.Windows.Forms.Label();
             this.panel_grandpere = new System.Windows.Forms.Panel();
             this.lbl_somme_grandpere = new System.Windows.Forms.Label();
             this.lbl_grand_pere_part = new System.Windows.Forms.Label();
@@ -151,7 +151,7 @@
             // 
             this.lbl_fils_part.AutoSize = true;
             this.lbl_fils_part.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_fils_part.Location = new System.Drawing.Point(220, 11);
+            this.lbl_fils_part.Location = new System.Drawing.Point(190, 13);
             this.lbl_fils_part.Name = "lbl_fils_part";
             this.lbl_fils_part.Size = new System.Drawing.Size(43, 29);
             this.lbl_fils_part.TabIndex = 0;
@@ -188,11 +188,21 @@
             this.panel_Filles.Size = new System.Drawing.Size(279, 80);
             this.panel_Filles.TabIndex = 0;
             // 
+            // lbl_sommefilles
+            // 
+            this.lbl_sommefilles.AutoSize = true;
+            this.lbl_sommefilles.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_sommefilles.Location = new System.Drawing.Point(10, 45);
+            this.lbl_sommefilles.Name = "lbl_sommefilles";
+            this.lbl_sommefilles.Size = new System.Drawing.Size(43, 29);
+            this.lbl_sommefilles.TabIndex = 0;
+            this.lbl_sommefilles.Text = "12";
+            // 
             // lbl_filles_part
             // 
             this.lbl_filles_part.AutoSize = true;
             this.lbl_filles_part.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_filles_part.Location = new System.Drawing.Point(220, 11);
+            this.lbl_filles_part.Location = new System.Drawing.Point(190, 13);
             this.lbl_filles_part.Name = "lbl_filles_part";
             this.lbl_filles_part.Size = new System.Drawing.Size(43, 29);
             this.lbl_filles_part.TabIndex = 0;
@@ -229,11 +239,21 @@
             this.panel_Freres.Size = new System.Drawing.Size(279, 80);
             this.panel_Freres.TabIndex = 0;
             // 
+            // lbl_sommefrere
+            // 
+            this.lbl_sommefrere.AutoSize = true;
+            this.lbl_sommefrere.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_sommefrere.Location = new System.Drawing.Point(10, 44);
+            this.lbl_sommefrere.Name = "lbl_sommefrere";
+            this.lbl_sommefrere.Size = new System.Drawing.Size(43, 29);
+            this.lbl_sommefrere.TabIndex = 0;
+            this.lbl_sommefrere.Text = "12";
+            // 
             // lbl_frere_part
             // 
             this.lbl_frere_part.AutoSize = true;
             this.lbl_frere_part.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_frere_part.Location = new System.Drawing.Point(231, 11);
+            this.lbl_frere_part.Location = new System.Drawing.Point(200, 13);
             this.lbl_frere_part.Name = "lbl_frere_part";
             this.lbl_frere_part.Size = new System.Drawing.Size(43, 29);
             this.lbl_frere_part.TabIndex = 0;
@@ -252,7 +272,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(17, 22);
+            this.label7.Location = new System.Drawing.Point(12, 22);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(55, 18);
             this.label7.TabIndex = 0;
@@ -270,11 +290,21 @@
             this.panel_Soeurs.Size = new System.Drawing.Size(279, 80);
             this.panel_Soeurs.TabIndex = 0;
             // 
+            // lbl_sommesoeur
+            // 
+            this.lbl_sommesoeur.AutoSize = true;
+            this.lbl_sommesoeur.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_sommesoeur.Location = new System.Drawing.Point(10, 45);
+            this.lbl_sommesoeur.Name = "lbl_sommesoeur";
+            this.lbl_sommesoeur.Size = new System.Drawing.Size(43, 29);
+            this.lbl_sommesoeur.TabIndex = 0;
+            this.lbl_sommesoeur.Text = "12";
+            // 
             // lbl_soeurs_part
             // 
             this.lbl_soeurs_part.AutoSize = true;
             this.lbl_soeurs_part.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_soeurs_part.Location = new System.Drawing.Point(231, 11);
+            this.lbl_soeurs_part.Location = new System.Drawing.Point(200, 11);
             this.lbl_soeurs_part.Name = "lbl_soeurs_part";
             this.lbl_soeurs_part.Size = new System.Drawing.Size(43, 29);
             this.lbl_soeurs_part.TabIndex = 0;
@@ -293,7 +323,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(17, 22);
+            this.label9.Location = new System.Drawing.Point(12, 22);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(60, 18);
             this.label9.TabIndex = 0;
@@ -311,15 +341,26 @@
             this.panel_Pere.Size = new System.Drawing.Size(279, 80);
             this.panel_Pere.TabIndex = 0;
             // 
+            // lbl_sommepere
+            // 
+            this.lbl_sommepere.AutoSize = true;
+            this.lbl_sommepere.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_sommepere.Location = new System.Drawing.Point(10, 44);
+            this.lbl_sommepere.Name = "lbl_sommepere";
+            this.lbl_sommepere.Size = new System.Drawing.Size(43, 29);
+            this.lbl_sommepere.TabIndex = 0;
+            this.lbl_sommepere.Text = "12";
+            // 
             // lbl_pere_part
             // 
             this.lbl_pere_part.AutoSize = true;
             this.lbl_pere_part.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pere_part.Location = new System.Drawing.Point(233, 11);
+            this.lbl_pere_part.Location = new System.Drawing.Point(188, 13);
             this.lbl_pere_part.Name = "lbl_pere_part";
             this.lbl_pere_part.Size = new System.Drawing.Size(43, 29);
             this.lbl_pere_part.TabIndex = 0;
             this.lbl_pere_part.Text = "12";
+            this.lbl_pere_part.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_pere_fleche
             // 
@@ -334,7 +375,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(17, 22);
+            this.label11.Location = new System.Drawing.Point(12, 22);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(41, 18);
             this.label11.TabIndex = 0;
@@ -352,11 +393,21 @@
             this.panel_Mere.Size = new System.Drawing.Size(279, 80);
             this.panel_Mere.TabIndex = 0;
             // 
+            // lbl_sommemere
+            // 
+            this.lbl_sommemere.AutoSize = true;
+            this.lbl_sommemere.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_sommemere.Location = new System.Drawing.Point(10, 45);
+            this.lbl_sommemere.Name = "lbl_sommemere";
+            this.lbl_sommemere.Size = new System.Drawing.Size(43, 29);
+            this.lbl_sommemere.TabIndex = 0;
+            this.lbl_sommemere.Text = "12";
+            // 
             // lbl_mere_part
             // 
             this.lbl_mere_part.AutoSize = true;
             this.lbl_mere_part.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_mere_part.Location = new System.Drawing.Point(233, 13);
+            this.lbl_mere_part.Location = new System.Drawing.Point(188, 13);
             this.lbl_mere_part.Name = "lbl_mere_part";
             this.lbl_mere_part.Size = new System.Drawing.Size(43, 29);
             this.lbl_mere_part.TabIndex = 0;
@@ -375,7 +426,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(17, 22);
+            this.label13.Location = new System.Drawing.Point(12, 20);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(45, 18);
             this.label13.TabIndex = 0;
@@ -393,11 +444,21 @@
             this.panel_epouse_ou_marie.Size = new System.Drawing.Size(849, 80);
             this.panel_epouse_ou_marie.TabIndex = 0;
             // 
+            // lbl_somme_epou_marie
+            // 
+            this.lbl_somme_epou_marie.AutoSize = true;
+            this.lbl_somme_epou_marie.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_somme_epou_marie.Location = new System.Drawing.Point(15, 44);
+            this.lbl_somme_epou_marie.Name = "lbl_somme_epou_marie";
+            this.lbl_somme_epou_marie.Size = new System.Drawing.Size(43, 29);
+            this.lbl_somme_epou_marie.TabIndex = 0;
+            this.lbl_somme_epou_marie.Text = "12";
+            // 
             // lbl_epouses_part
             // 
             this.lbl_epouses_part.AutoSize = true;
             this.lbl_epouses_part.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_epouses_part.Location = new System.Drawing.Point(803, 11);
+            this.lbl_epouses_part.Location = new System.Drawing.Point(770, 11);
             this.lbl_epouses_part.Name = "lbl_epouses_part";
             this.lbl_epouses_part.Size = new System.Drawing.Size(43, 29);
             this.lbl_epouses_part.TabIndex = 0;
@@ -442,66 +503,6 @@
             this.label4.TabIndex = 1;
             this.label4.Text = "RF: prends le reste avec son frére";
             // 
-            // lbl_sommepere
-            // 
-            this.lbl_sommepere.AutoSize = true;
-            this.lbl_sommepere.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_sommepere.Location = new System.Drawing.Point(19, 44);
-            this.lbl_sommepere.Name = "lbl_sommepere";
-            this.lbl_sommepere.Size = new System.Drawing.Size(43, 29);
-            this.lbl_sommepere.TabIndex = 0;
-            this.lbl_sommepere.Text = "12";
-            // 
-            // lbl_sommefrere
-            // 
-            this.lbl_sommefrere.AutoSize = true;
-            this.lbl_sommefrere.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_sommefrere.Location = new System.Drawing.Point(18, 44);
-            this.lbl_sommefrere.Name = "lbl_sommefrere";
-            this.lbl_sommefrere.Size = new System.Drawing.Size(43, 29);
-            this.lbl_sommefrere.TabIndex = 0;
-            this.lbl_sommefrere.Text = "12";
-            // 
-            // lbl_sommesoeur
-            // 
-            this.lbl_sommesoeur.AutoSize = true;
-            this.lbl_sommesoeur.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_sommesoeur.Location = new System.Drawing.Point(18, 45);
-            this.lbl_sommesoeur.Name = "lbl_sommesoeur";
-            this.lbl_sommesoeur.Size = new System.Drawing.Size(43, 29);
-            this.lbl_sommesoeur.TabIndex = 0;
-            this.lbl_sommesoeur.Text = "12";
-            // 
-            // lbl_sommemere
-            // 
-            this.lbl_sommemere.AutoSize = true;
-            this.lbl_sommemere.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_sommemere.Location = new System.Drawing.Point(18, 44);
-            this.lbl_sommemere.Name = "lbl_sommemere";
-            this.lbl_sommemere.Size = new System.Drawing.Size(43, 29);
-            this.lbl_sommemere.TabIndex = 0;
-            this.lbl_sommemere.Text = "12";
-            // 
-            // lbl_sommefilles
-            // 
-            this.lbl_sommefilles.AutoSize = true;
-            this.lbl_sommefilles.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_sommefilles.Location = new System.Drawing.Point(10, 45);
-            this.lbl_sommefilles.Name = "lbl_sommefilles";
-            this.lbl_sommefilles.Size = new System.Drawing.Size(43, 29);
-            this.lbl_sommefilles.TabIndex = 0;
-            this.lbl_sommefilles.Text = "12";
-            // 
-            // lbl_somme_epou_marie
-            // 
-            this.lbl_somme_epou_marie.AutoSize = true;
-            this.lbl_somme_epou_marie.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_somme_epou_marie.Location = new System.Drawing.Point(15, 44);
-            this.lbl_somme_epou_marie.Name = "lbl_somme_epou_marie";
-            this.lbl_somme_epou_marie.Size = new System.Drawing.Size(43, 29);
-            this.lbl_somme_epou_marie.TabIndex = 0;
-            this.lbl_somme_epou_marie.Text = "12";
-            // 
             // panel_grandpere
             // 
             this.panel_grandpere.BackColor = System.Drawing.Color.LightGreen;
@@ -528,7 +529,7 @@
             // 
             this.lbl_grand_pere_part.AutoSize = true;
             this.lbl_grand_pere_part.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_grand_pere_part.Location = new System.Drawing.Point(220, 11);
+            this.lbl_grand_pere_part.Location = new System.Drawing.Point(190, 11);
             this.lbl_grand_pere_part.Name = "lbl_grand_pere_part";
             this.lbl_grand_pere_part.Size = new System.Drawing.Size(43, 29);
             this.lbl_grand_pere_part.TabIndex = 0;
@@ -547,7 +548,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(17, 22);
+            this.label12.Location = new System.Drawing.Point(17, 20);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(91, 18);
             this.label12.TabIndex = 0;
@@ -579,7 +580,7 @@
             // 
             this.lbl_grandmere_p_part.AutoSize = true;
             this.lbl_grandmere_p_part.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_grandmere_p_part.Location = new System.Drawing.Point(233, 11);
+            this.lbl_grandmere_p_part.Location = new System.Drawing.Point(188, 11);
             this.lbl_grandmere_p_part.Name = "lbl_grandmere_p_part";
             this.lbl_grandmere_p_part.Size = new System.Drawing.Size(43, 29);
             this.lbl_grandmere_p_part.TabIndex = 0;
@@ -598,7 +599,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(17, 22);
+            this.label15.Location = new System.Drawing.Point(12, 22);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(162, 18);
             this.label15.TabIndex = 0;
@@ -630,7 +631,7 @@
             // 
             this.lbl_grande_mere_m.AutoSize = true;
             this.lbl_grande_mere_m.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_grande_mere_m.Location = new System.Drawing.Point(231, 11);
+            this.lbl_grande_mere_m.Location = new System.Drawing.Point(200, 13);
             this.lbl_grande_mere_m.Name = "lbl_grande_mere_m";
             this.lbl_grande_mere_m.Size = new System.Drawing.Size(43, 29);
             this.lbl_grande_mere_m.TabIndex = 0;
@@ -649,7 +650,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(17, 22);
+            this.label17.Location = new System.Drawing.Point(12, 22);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(177, 18);
             this.label17.TabIndex = 0;

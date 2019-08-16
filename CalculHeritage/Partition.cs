@@ -113,7 +113,7 @@ namespace CalculHeritage
                 }
                 else if (filles>0)
                 {
-                    partition = "1/6 + R";
+                    partition = "1/6+R";
                     Mpere=6;
                 }
                 else
