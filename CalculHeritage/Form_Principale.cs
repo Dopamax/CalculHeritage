@@ -197,6 +197,9 @@ namespace CalculHeritage
                 affichageFinalUC1.lbl_pere_part.Text = p.Partition_Pere(VerifierVivant(donneeHommeUC1.rdbtn_p_oui,donneeHommeUC1.rdbtn_p_non));
                 affichageFinalUC1.lbl_mere_part.Text = p.Partition_Mere(VerifierVivant(donneeHommeUC1.rdbtn_m_oui, donneeHommeUC1.rdbtn_m_non));
                 affichageFinalUC1.lbl_epouses_part.Text = p.Partition_Epouses(int.Parse(donneeHommeUC1.txt_nombrepouse.Text));
+                affichageFinalUC1.lbl_grand_pere_part.Text = p.Partition_Grandpere(VerifierVivant(donneeHommeUC1.rdbtn_gp_oui,donneeHommeUC1.rdbtn_gp_non));
+                affichageFinalUC1.lbl_grande_mere_m.Text = p.Partition_GrandeMere_matern(VerifierVivant(donneeHommeUC1.rdbtn_gm_m_oui,donneeHommeUC1.rdbtn_gm_m_non));
+                affichageFinalUC1.lbl_grandmere_p_part.Text = p.Partition_GrandeMere_patern(VerifierVivant(donneeHommeUC1.rdbtn_gm_paternelle_oui,donneeHommeUC1.rdbtn_gm_paternelle_non));
                 affichageFinalUC1.lbl_epouse_ou_marie.Text = "Epouse(s)";
 
             }
@@ -209,6 +212,9 @@ namespace CalculHeritage
                 affichageFinalUC1.lbl_soeurs_part.Text = p.Partition_Soeurs(int.Parse(donneeFemmeUC1.txt_nombreSoeurs.Text));
                 affichageFinalUC1.lbl_pere_part.Text = p.Partition_Pere(VerifierVivant(donneeFemmeUC1.rdbtn_p_oui, donneeFemmeUC1.rdbtn_p_non));
                 affichageFinalUC1.lbl_mere_part.Text = p.Partition_Mere(VerifierVivant(donneeFemmeUC1.rdbtn_m_oui, donneeFemmeUC1.rdbtn_m_non));
+                affichageFinalUC1.lbl_grand_pere_part.Text = p.Partition_Grandpere(VerifierVivant(donneeFemmeUC1.rdbtn_gp_oui, donneeHommeUC1.rdbtn_gp_non));
+                affichageFinalUC1.lbl_grande_mere_m.Text = p.Partition_GrandeMere_matern(VerifierVivant(donneeFemmeUC1.rdbtn_gm_m_oui, donneeFemmeUC1.rdbtn_gm_m_non));
+                affichageFinalUC1.lbl_grandmere_p_part.Text = p.Partition_GrandeMere_patern(VerifierVivant(donneeFemmeUC1.rdbtn_gm_paternelle_oui, donneeFemmeUC1.rdbtn_gm_paternelle_non));
                 affichageFinalUC1.lbl_epouse_ou_marie.Text = "Marie";
 
             }

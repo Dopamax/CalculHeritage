@@ -30,12 +30,12 @@
         {
             this.rdbtn_m_non = new System.Windows.Forms.RadioButton();
             this.rdbtn_gm_paternelle_non = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rdbtn_gm_m_non = new System.Windows.Forms.RadioButton();
             this.rdbtn_gp_non = new System.Windows.Forms.RadioButton();
             this.rdbtn_p_non = new System.Windows.Forms.RadioButton();
             this.rdbtn_m_oui = new System.Windows.Forms.RadioButton();
             this.rdbtn_gm_paternelle_oui = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rdbtn_gm_m_oui = new System.Windows.Forms.RadioButton();
             this.rdbtn_gp_oui = new System.Windows.Forms.RadioButton();
             this.rdbtn_p_oui = new System.Windows.Forms.RadioButton();
             this.txt_nombrefille = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -90,16 +90,16 @@
             this.rdbtn_gm_paternelle_non.Text = "Non";
             this.rdbtn_gm_paternelle_non.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rdbtn_gm_m_non
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(76, 8);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(45, 17);
-            this.radioButton2.TabIndex = 11;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Non";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdbtn_gm_m_non.AutoSize = true;
+            this.rdbtn_gm_m_non.Location = new System.Drawing.Point(76, 8);
+            this.rdbtn_gm_m_non.Name = "rdbtn_gm_m_non";
+            this.rdbtn_gm_m_non.Size = new System.Drawing.Size(45, 17);
+            this.rdbtn_gm_m_non.TabIndex = 11;
+            this.rdbtn_gm_m_non.TabStop = true;
+            this.rdbtn_gm_m_non.Text = "Non";
+            this.rdbtn_gm_m_non.UseVisualStyleBackColor = true;
             // 
             // rdbtn_gp_non
             // 
@@ -145,16 +145,16 @@
             this.rdbtn_gm_paternelle_oui.Text = "Oui";
             this.rdbtn_gm_paternelle_oui.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rdbtn_gm_m_oui
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(18, 8);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(41, 17);
-            this.radioButton1.TabIndex = 10;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Oui";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdbtn_gm_m_oui.AutoSize = true;
+            this.rdbtn_gm_m_oui.Location = new System.Drawing.Point(18, 8);
+            this.rdbtn_gm_m_oui.Name = "rdbtn_gm_m_oui";
+            this.rdbtn_gm_m_oui.Size = new System.Drawing.Size(41, 17);
+            this.rdbtn_gm_m_oui.TabIndex = 10;
+            this.rdbtn_gm_m_oui.TabStop = true;
+            this.rdbtn_gm_m_oui.Text = "Oui";
+            this.rdbtn_gm_m_oui.UseVisualStyleBackColor = true;
             // 
             // rdbtn_gp_oui
             // 
@@ -408,8 +408,8 @@
             // 
             // grp_grande_mere_m
             // 
-            this.grp_grande_mere_m.Controls.Add(this.radioButton2);
-            this.grp_grande_mere_m.Controls.Add(this.radioButton1);
+            this.grp_grande_mere_m.Controls.Add(this.rdbtn_gm_m_non);
+            this.grp_grande_mere_m.Controls.Add(this.rdbtn_gm_m_oui);
             this.grp_grande_mere_m.Location = new System.Drawing.Point(294, 224);
             this.grp_grande_mere_m.Name = "grp_grande_mere_m";
             this.grp_grande_mere_m.Size = new System.Drawing.Size(139, 29);
@@ -482,12 +482,12 @@
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.RadioButton rdbtn_m_non;
         public System.Windows.Forms.RadioButton rdbtn_gm_paternelle_non;
-        public System.Windows.Forms.RadioButton radioButton2;
+        public System.Windows.Forms.RadioButton rdbtn_gm_m_non;
         public System.Windows.Forms.RadioButton rdbtn_gp_non;
         public System.Windows.Forms.RadioButton rdbtn_p_non;
         public System.Windows.Forms.RadioButton rdbtn_m_oui;
         public System.Windows.Forms.RadioButton rdbtn_gm_paternelle_oui;
-        public System.Windows.Forms.RadioButton radioButton1;
+        public System.Windows.Forms.RadioButton rdbtn_gm_m_oui;
         public System.Windows.Forms.RadioButton rdbtn_gp_oui;
         public System.Windows.Forms.RadioButton rdbtn_p_oui;
         public Bunifu.Framework.UI.BunifuMaterialTextbox txt_nombrefille;

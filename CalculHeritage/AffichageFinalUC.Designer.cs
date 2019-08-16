@@ -74,8 +74,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel_grandpere_maternelle = new System.Windows.Forms.Panel();
-            this.lbl_somme_grandpere_m = new System.Windows.Forms.Label();
-            this.lbl_grandpere_m_part = new System.Windows.Forms.Label();
+            this.lbl_somme_grandmere_p = new System.Windows.Forms.Label();
+            this.lbl_grandmere_p_part = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -556,8 +556,8 @@
             // panel_grandpere_maternelle
             // 
             this.panel_grandpere_maternelle.BackColor = System.Drawing.Color.LightGreen;
-            this.panel_grandpere_maternelle.Controls.Add(this.lbl_somme_grandpere_m);
-            this.panel_grandpere_maternelle.Controls.Add(this.lbl_grandpere_m_part);
+            this.panel_grandpere_maternelle.Controls.Add(this.lbl_somme_grandmere_p);
+            this.panel_grandpere_maternelle.Controls.Add(this.lbl_grandmere_p_part);
             this.panel_grandpere_maternelle.Controls.Add(this.label14);
             this.panel_grandpere_maternelle.Controls.Add(this.label15);
             this.panel_grandpere_maternelle.Location = new System.Drawing.Point(301, 278);
@@ -565,25 +565,25 @@
             this.panel_grandpere_maternelle.Size = new System.Drawing.Size(279, 80);
             this.panel_grandpere_maternelle.TabIndex = 0;
             // 
-            // lbl_somme_grandpere_m
+            // lbl_somme_grandmere_p
             // 
-            this.lbl_somme_grandpere_m.AutoSize = true;
-            this.lbl_somme_grandpere_m.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_somme_grandpere_m.Location = new System.Drawing.Point(10, 45);
-            this.lbl_somme_grandpere_m.Name = "lbl_somme_grandpere_m";
-            this.lbl_somme_grandpere_m.Size = new System.Drawing.Size(43, 29);
-            this.lbl_somme_grandpere_m.TabIndex = 0;
-            this.lbl_somme_grandpere_m.Text = "12";
+            this.lbl_somme_grandmere_p.AutoSize = true;
+            this.lbl_somme_grandmere_p.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_somme_grandmere_p.Location = new System.Drawing.Point(10, 45);
+            this.lbl_somme_grandmere_p.Name = "lbl_somme_grandmere_p";
+            this.lbl_somme_grandmere_p.Size = new System.Drawing.Size(43, 29);
+            this.lbl_somme_grandmere_p.TabIndex = 0;
+            this.lbl_somme_grandmere_p.Text = "12";
             // 
-            // lbl_grandpere_m_part
+            // lbl_grandmere_p_part
             // 
-            this.lbl_grandpere_m_part.AutoSize = true;
-            this.lbl_grandpere_m_part.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_grandpere_m_part.Location = new System.Drawing.Point(220, 11);
-            this.lbl_grandpere_m_part.Name = "lbl_grandpere_m_part";
-            this.lbl_grandpere_m_part.Size = new System.Drawing.Size(43, 29);
-            this.lbl_grandpere_m_part.TabIndex = 0;
-            this.lbl_grandpere_m_part.Text = "12";
+            this.lbl_grandmere_p_part.AutoSize = true;
+            this.lbl_grandmere_p_part.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_grandmere_p_part.Location = new System.Drawing.Point(233, 11);
+            this.lbl_grandmere_p_part.Name = "lbl_grandmere_p_part";
+            this.lbl_grandmere_p_part.Size = new System.Drawing.Size(43, 29);
+            this.lbl_grandmere_p_part.TabIndex = 0;
+            this.lbl_grandmere_p_part.Text = "12";
             // 
             // label14
             // 
@@ -602,7 +602,7 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(162, 18);
             this.label15.TabIndex = 0;
-            this.label15.Text = "Grand pére maternel";
+            this.label15.Text = "Grand mére paternel";
             // 
             // panel1
             // 
@@ -630,7 +630,7 @@
             // 
             this.lbl_grande_mere_m.AutoSize = true;
             this.lbl_grande_mere_m.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_grande_mere_m.Location = new System.Drawing.Point(220, 11);
+            this.lbl_grande_mere_m.Location = new System.Drawing.Point(231, 11);
             this.lbl_grande_mere_m.Name = "lbl_grande_mere_m";
             this.lbl_grande_mere_m.Size = new System.Drawing.Size(43, 29);
             this.lbl_grande_mere_m.TabIndex = 0;
@@ -749,8 +749,8 @@
         public System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel_grandpere_maternelle;
-        public System.Windows.Forms.Label lbl_somme_grandpere_m;
-        public System.Windows.Forms.Label lbl_grandpere_m_part;
+        public System.Windows.Forms.Label lbl_somme_grandmere_p;
+        public System.Windows.Forms.Label lbl_grandmere_p_part;
         public System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel1;
