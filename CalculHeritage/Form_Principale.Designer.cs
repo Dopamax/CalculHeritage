@@ -108,7 +108,7 @@
             this.btn_Suivant.IconVisible = true;
             this.btn_Suivant.IconZoom = 90D;
             this.btn_Suivant.IsTab = false;
-            this.btn_Suivant.Location = new System.Drawing.Point(655, 437);
+            this.btn_Suivant.Location = new System.Drawing.Point(655, 475);
             this.btn_Suivant.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btn_Suivant.Name = "btn_Suivant";
             this.btn_Suivant.Normalcolor = System.Drawing.SystemColors.Highlight;
@@ -145,7 +145,7 @@
             this.btn_precedant.IconVisible = true;
             this.btn_precedant.IconZoom = 90D;
             this.btn_precedant.IsTab = false;
-            this.btn_precedant.Location = new System.Drawing.Point(27, 441);
+            this.btn_precedant.Location = new System.Drawing.Point(25, 475);
             this.btn_precedant.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btn_precedant.Name = "btn_precedant";
             this.btn_precedant.Normalcolor = System.Drawing.SystemColors.Highlight;
@@ -162,9 +162,9 @@
             // 
             // affichageFinalUC1
             // 
-            this.affichageFinalUC1.Location = new System.Drawing.Point(1, 41);
+            this.affichageFinalUC1.Location = new System.Drawing.Point(1, 12);
             this.affichageFinalUC1.Name = "affichageFinalUC1";
-            this.affichageFinalUC1.Size = new System.Drawing.Size(895, 388);
+            this.affichageFinalUC1.Size = new System.Drawing.Size(895, 454);
             this.affichageFinalUC1.TabIndex = 8;
             // 
             // donneeHommeUC1
@@ -197,7 +197,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(242)))), ((int)(((byte)(227)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1199, 505);
+            this.ClientSize = new System.Drawing.Size(1199, 531);
             this.Controls.Add(this.affichageFinalUC1);
             this.Controls.Add(this.donneeHommeUC1);
             this.Controls.Add(this.donneeFemmeUC1);
@@ -208,10 +208,9 @@
             this.Controls.Add(this.bunifuFlatButton1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1215, 544);
-            this.MinimumSize = new System.Drawing.Size(1215, 544);
+            this.MaximumSize = new System.Drawing.Size(1215, 570);
+            this.MinimumSize = new System.Drawing.Size(1215, 570);
             this.Name = "Form_Principale";
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calcul d\'Héritage";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
