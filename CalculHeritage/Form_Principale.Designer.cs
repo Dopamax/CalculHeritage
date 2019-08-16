@@ -170,25 +170,25 @@
             // donneeHommeUC1
             // 
             this.donneeHommeUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(242)))), ((int)(((byte)(227)))));
-            this.donneeHommeUC1.Location = new System.Drawing.Point(1, 43);
+            this.donneeHommeUC1.Location = new System.Drawing.Point(1, 26);
             this.donneeHommeUC1.Name = "donneeHommeUC1";
-            this.donneeHommeUC1.Size = new System.Drawing.Size(895, 388);
+            this.donneeHommeUC1.Size = new System.Drawing.Size(895, 440);
             this.donneeHommeUC1.TabIndex = 6;
             // 
             // donneeFemmeUC1
             // 
             this.donneeFemmeUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(242)))), ((int)(((byte)(227)))));
-            this.donneeFemmeUC1.Location = new System.Drawing.Point(1, 34);
+            this.donneeFemmeUC1.Location = new System.Drawing.Point(1, 26);
             this.donneeFemmeUC1.Name = "donneeFemmeUC1";
-            this.donneeFemmeUC1.Size = new System.Drawing.Size(895, 388);
+            this.donneeFemmeUC1.Size = new System.Drawing.Size(895, 440);
             this.donneeFemmeUC1.TabIndex = 7;
             // 
             // question1CU1
             // 
             this.question1CU1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(242)))), ((int)(((byte)(227)))));
-            this.question1CU1.Location = new System.Drawing.Point(7, 43);
+            this.question1CU1.Location = new System.Drawing.Point(7, 12);
             this.question1CU1.Name = "question1CU1";
-            this.question1CU1.Size = new System.Drawing.Size(895, 388);
+            this.question1CU1.Size = new System.Drawing.Size(895, 454);
             this.question1CU1.TabIndex = 2;
             // 
             // Form_Principale
