@@ -324,6 +324,219 @@ namespace CalculHeritage
             
         }
 
-       
+        public string Fleches_fils(int nombre)
+        {
+            string fleches = null;
+            fils = nombre;
+
+            if (nombre > 0)
+            {
+                fleches = "R";
+            }
+            return fleches;
+        }
+        public string Fleches_filles(int nombre)
+        {
+            string fleches = null;
+            filles = nombre;
+
+            if (nombre == 1 && fils > 0)
+            {
+                fleches = "RF";
+            }
+            else if (nombre == 1 && fils == 0)
+            {
+                fleches = "1/2";
+                Mfilles = 2;
+            }
+            else if (nombre > 1 && fils >= 0)
+            {
+                fleches = "2/3";
+                Mfilles = 3;
+            }
+            return fleches;
+        }
+
+        public string Fleches_Pere(bool vivant)
+        {
+            string fleches = null;
+            pere = Convert.ToInt16(vivant);
+
+            if (vivant)
+            {
+                if (fils > 0)
+                {
+                    fleches = "1/6";
+                    Mpere = 6;
+                }
+                else if (filles > 0)
+                {
+                    fleches = "1/6+R";
+                    Mpere = 6;
+                }
+                else
+                {
+                    fleches = "R";
+                }
+            }
+            return fleches;
+        }
+        public string Fleches_Mere(bool vivante)
+        {
+            string fleches = null;
+
+            if (vivante)
+            {
+                if (fils > 0 || filles > 0)
+                {
+                    fleches = "1/6";
+                    Mmere = 6;
+                }
+                else
+                {
+                    fleches = "1/3";
+                    Mmere = 6;
+                }
+            }
+            return fleches;
+        }
+        public string Fleches_Grandpere(bool vivante)
+        {
+            string fleches = null;
+            gpere = Convert.ToInt16(vivante);
+
+            if (vivante)
+            {
+                if ((fils > 0 || filles > 0 || seour > 0) && pere == 0)
+                {
+                    fleches = "1/6";
+                    Mgpere = 6;
+                }
+                else if (pere == 0)
+                {
+                    fleches = "R";
+                }
+            }
+            return fleches;
+        }
+        public string Fleches_GrandeMere_matern(bool vivante)
+        {
+            string fleches = null;
+            gmerem = Convert.ToInt16(vivante);
+
+            if (vivante)
+            {
+                if (mere == 0)
+                {
+                    fleches = "1/6";
+                    Mgmerem = 6;
+                }
+            }
+            return fleches;
+        }
+
+        public string Fleches_GrandeMere_patern(bool vivante)
+        {
+            string fleches = null;
+            gmerep = Convert.ToInt16(vivante);
+
+            if (vivante)
+            {
+                if (mere == 0 && pere == 0)
+                {
+                    fleches = "1/6";
+                    Mgmerep = 6;
+                }
+            }
+            return fleches;
+        }
+        public string Fleches_Frere(int nombre)
+        {
+            string fleches = null;
+            frere = nombre;
+
+            if (nombre > 0)
+            {
+                if (fils == 0 && filles == 0 && pere == 0 && gpere == 0)
+                {
+                    if (nombre > 1)
+                    {
+                        fleches = "R";
+                    }
+                    else
+                    {
+                        fleches = "R";
+                    }
+                }
+            }
+            return fleches;
+        }
+        public string Fleches_Soeurs(int nombre)
+        {
+            string fleches = null;
+            seour = nombre;
+
+            if (nombre == 0)
+            {
+                if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere == 0)
+                {
+                    fleches = "1/2";
+                    Mseour = 2;
+                }
+            }
+            else if (nombre > 1)
+            {
+                if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere == 0)
+                {
+                    fleches = "2/3";
+                    Mseour = 3;
+                }
+                else if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere > 0)
+                {
+                    fleches = "RF";
+                }
+            }
+            return fleches;
+        }
+        public string Fleches_Marie(bool vivante)
+        {
+            string fleches = null;
+            marie = Convert.ToInt16(vivante);
+
+            if (vivante)
+            {
+                if (fils > 0 || filles > 0)
+                {
+                    fleches = "1/4";
+                    Mmarie = 4;
+                }
+                else
+                {
+                    fleches = "1/2";
+                    Mmarie = 2;
+                }
+            }
+            return fleches;
+        }
+        public string Fleches_Epouses(int nombre)
+        {
+            string fleches = null;
+            epousse = nombre;
+
+            if (nombre > 0)
+            {
+                if (fils > 0 || filles > 0)
+                {
+                    fleches = "1/8";
+                    Mepousse = 8;
+                }
+                else
+                {
+                    fleches = "1/4";
+                    Mepousse = 4;
+                }
+            }
+            return fleches;
+        }
     }
 }
