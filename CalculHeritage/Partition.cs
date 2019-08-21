@@ -13,8 +13,8 @@ namespace CalculHeritage
         /// </summary>
         /// 
         
-        int fils = 0, filles = 0, pere = 0, mere = 0, seour = 0, frere = 0, gpere = 0, gmerep = 0, gmerem = 0, epousse = 0, marie = 0;
-        int Mfils = 0, Mfilles = 0, Mpere = 0, Mmere = 0, Mseour = 0, Mfrere = 0, Mgpere = 0, Mgmerep = 0, Mgmerem = 0, Mepousse = 0, Mmarie = 0;
+        int fils = 0, filles = 0, pere = 0, mere = 0, soeur = 0, frere = 0, gpere = 0, gmerep = 0, gmerem = 0, epousse = 0, marie = 0;
+        int Mfils = 0, Mfilles = 0, Mpere = 0, Mmere = 0, Msoeur = 0, Mfrere = 0, Mgpere = 0, Mgmerep = 0, Mgmerem = 0, Mepousse = 0, Mmarie = 0;
         List<int> menbres = new List<int>();
         
         public Partition()
@@ -22,12 +22,7 @@ namespace CalculHeritage
             
         }
 
-        public Partition(List<int> membre)
-        {
-            membres = AjouterMembre();
-        }
-
-        public int lcm(int[] t, int n)
+        public int lcm(List<int> t, int n)
         {
 
             for (int i = 0; i <= n; i++)
@@ -74,6 +69,7 @@ namespace CalculHeritage
             if (nombre>0)
             {
                 partition= "R";
+                membres.Add(fils);
             }
             return partition;
         }
@@ -85,16 +81,21 @@ namespace CalculHeritage
             if (nombre==1 && fils>0)
             {
                 partition= "RF";
+                membres.Add(filles);
             }
             else if (nombre==1 && fils==0)
             {
                 partition= "1/2";
                 Mfilles = 2;
+                membres.Add(filles);
+                m.Add(Mfilles);
             }
             else if (nombre>1 && fils>=0)
             {
                 partition= "2/3";
                 Mfilles = 3;
+                membres.Add(filles);
+                m.Add(Mfilles);
             }
             return partition;
         }
@@ -110,15 +111,20 @@ namespace CalculHeritage
                 {
                     partition = "1/6";
                     Mpere = 6;
+                    membres.Add(pere);
+                    m.Add(Mpere);
                 }
                 else if (filles>0)
                 {
                     partition = "1/6+R";
                     Mpere=6;
+                    membres.Add(pere);
+                    m.Add(Mpere);
                 }
                 else
                 {
                     partition = "R";
+                    membres.Add(pere);
                 }
             }
             return partition;
@@ -133,11 +139,15 @@ namespace CalculHeritage
                 {
                     partition = "1/6";
                     Mmere = 6;
+                    membres.Add(mere);
+                    m.Add(Mmere);
                 }
                 else
                 {
                     partition = "1/3";
-                    Mmere = 6;
+                    Mmere = 3;
+                    membres.Add(mere);
+                    m.Add(Mmere);
                 }
             }
             return partition;
@@ -149,14 +159,17 @@ namespace CalculHeritage
            
             if (vivante)
             {
-                if ( (fils>0 || filles>0 || seour>0) && pere==0)
+                if ( (fils>0 || filles>0 || soeur>0) && pere==0)
                 {
                     partition = "1/6";
                     Mgpere = 6;
+                    membres.Add(gpere);
+                    m.Add(Mgpere);
                 }
                 else if (pere==0)
                 {
                     partition = "R";
+                    membres.Add(gpere);
                 }
             }
             return partition;
@@ -172,6 +185,8 @@ namespace CalculHeritage
                 {
                     partition = "1/6";
                     Mgmerem = 6;
+                    membres.Add(gmerem);
+                    m.Add(Mgmerem);
                 }
             }
             return partition;
@@ -188,6 +203,8 @@ namespace CalculHeritage
                 {
                     partition = "1/6";
                     Mgmerep = 6;
+                    membres.Add(gmerep);
+                    m.Add(Mgmerep);
                 }
             }
             return partition;
@@ -204,10 +221,12 @@ namespace CalculHeritage
                     if (nombre>1)
                     {
                         partition = "R";
+                        membres.Add(frere);
                     }
                     else
                     {
                         partition = "R";
+                        membres.Add(frere);
                     }
                 }
             }
@@ -216,14 +235,16 @@ namespace CalculHeritage
         public string Partition_Soeurs(int nombre)
         {
             string partition = null;
-            seour = nombre;
+            soeur = nombre;
            
             if (nombre ==0)
             {
                 if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere == 0)
                 {
                     partition ="1/2";
-                    Mseour = 2;
+                    Msoeur = 2;
+                    membres.Add(soeur);
+                    m.Add(Msoeur);
                 }
             }
             else if (nombre > 1)
@@ -231,11 +252,14 @@ namespace CalculHeritage
                 if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere == 0)
                 {
                     partition = "2/3";
-                    Mseour = 3;
+                    Msoeur = 3;
+                    membres.Add(soeur);
+                    m.Add(Msoeur);
                 }
                 else if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere > 0)
                 {
                     partition = "RF";
+                    membres.Add(soeur);
                 }
             }
             return partition;
@@ -251,11 +275,15 @@ namespace CalculHeritage
                 {
                     partition = "1/4";
                     Mmarie = 4;
+                    membres.Add(marie);
+                    m.Add(Mmarie);
                 }
                 else
                 {
                     partition = "1/2";
                     Mmarie = 2;
+                    membres.Add(marie);
+                    m.Add(Mmarie);
                 }
             }
             return partition;
@@ -271,11 +299,15 @@ namespace CalculHeritage
                 {
                     partition = "1/8";
                     Mepousse = 8;
+                    membres.Add(epousse);
+                    m.Add(Mepousse);
                 }
                 else
                 {
                     partition = "1/4";
                     Mepousse = 4;
+                    membres.Add(epousse);
+                    m.Add(Mepousse);
                 }
             }
             return partition;
@@ -287,6 +319,7 @@ namespace CalculHeritage
             string numero_matiere = null;
 
             //ici votre code
+            int LCM = lcm(m,m.Count);
             return numero_matiere;
         }
         void hello()
@@ -305,25 +338,11 @@ namespace CalculHeritage
                 
             public List<int> m = new List<int>();
        
-        public List<int> AjouterMembre()
-        {
-            List<int> membre = membres;
-            membres.Add(fils );
-            membres.Add(filles);
-            membres.Add(pere);
-            membres.Add( mere);
-            membres.Add( seour);
-            membres.Add(frere);
-            membres.Add(gpere);
-            membres.Add( gmerep);
-            membres.Add(gmerem);
-            membres.Add(epousse);
-            membres.Add(marie);
-            
-            return membre;
-            
-        }
 
+        /// <summary>
+        ///              Fleches
+        /// </summary>
+        
         public string Fleches_fils(int nombre)
         {
             string fleches = null;
@@ -407,7 +426,7 @@ namespace CalculHeritage
 
             if (vivante)
             {
-                if ((fils > 0 || filles > 0 || seour > 0) && pere == 0)
+                if ((fils > 0 || filles > 0 || soeur > 0) && pere == 0)
                 {
                     fleches = "1/6";
                     Mgpere = 6;
@@ -474,14 +493,14 @@ namespace CalculHeritage
         public string Fleches_Soeurs(int nombre)
         {
             string fleches = null;
-            seour = nombre;
+            soeur = nombre;
 
             if (nombre == 0)
             {
                 if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere == 0)
                 {
                     fleches = "1/2";
-                    Mseour = 2;
+                    Msoeur = 2;
                 }
             }
             else if (nombre > 1)
@@ -489,7 +508,7 @@ namespace CalculHeritage
                 if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere == 0)
                 {
                     fleches = "2/3";
-                    Mseour = 3;
+                    Msoeur = 3;
                 }
                 else if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere > 0)
                 {
