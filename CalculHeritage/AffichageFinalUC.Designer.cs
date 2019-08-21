@@ -110,10 +110,11 @@
             // 
             this.lbl_numero_matiere.AutoSize = true;
             this.lbl_numero_matiere.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_numero_matiere.Location = new System.Drawing.Point(233, 40);
+            this.lbl_numero_matiere.Location = new System.Drawing.Point(231, 22);
             this.lbl_numero_matiere.Name = "lbl_numero_matiere";
-            this.lbl_numero_matiere.Size = new System.Drawing.Size(0, 29);
+            this.lbl_numero_matiere.Size = new System.Drawing.Size(28, 29);
             this.lbl_numero_matiere.TabIndex = 0;
+            this.lbl_numero_matiere.Text = "0";
             // 
             // label1
             // 

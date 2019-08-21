@@ -16,7 +16,7 @@ namespace CalculHeritage
         int fils = 0, filles = 0, pere = 0, mere = 0, soeur = 0, frere = 0, gpere = 0, gmerep = 0, gmerem = 0, epousse = 0, marie = 0;
         int Mfils = 0, Mfilles = 0, Mpere = 0, Mmere = 0, Msoeur = 0, Mfrere = 0, Mgpere = 0, Mgmerep = 0, Mgmerem = 0, Mepousse = 0, Mmarie = 0;
         List<int> menbres = new List<int>();
-        
+        int LCM=0;
         public Partition()
         {
             
@@ -24,8 +24,7 @@ namespace CalculHeritage
 
         public int lcm(List<int> t, int n)
         {
-
-            for (int i = 0; i <= n; i++)
+            for (int i = 0; i < n; i++)
             {
                 if (t[i] == 0) t[i] = 1;
             }
@@ -218,16 +217,8 @@ namespace CalculHeritage
             {
                 if (fils==0 && filles==0 && pere==0 && gpere==0)
                 {
-                    if (nombre>1)
-                    {
-                        partition = "R";
-                        membres.Add(frere);
-                    }
-                    else
-                    {
-                        partition = "R";
-                        membres.Add(frere);
-                    }
+                    partition = "R";
+                    membres.Add(frere);
                 }
             }
             return partition;
@@ -315,11 +306,11 @@ namespace CalculHeritage
 
         public string OrigineDeLaMAtiere()
         {
-
-            string numero_matiere = null;
+            LCM = lcm(m, m.Count);
+            string numero_matiere = LCM.ToString();
 
             //ici votre code
-            int LCM = lcm(m,m.Count);
+            
             return numero_matiere;
         }
         void hello()
@@ -329,9 +320,6 @@ namespace CalculHeritage
             {
                 System.Windows.Forms.MessageBox.Show("Hello");
             }
-
-            
-
         }
 
            public List<int> membres = new List<int>();
@@ -343,217 +331,141 @@ namespace CalculHeritage
         ///              Fleches
         /// </summary>
         
-        public string Fleches_fils(int nombre)
+        void verification()
+        {
+            double som = 0;
+            som += double.Parse(Fleches_Epouses());
+            som += double.Parse(Fleches_Marie());
+            som += double.Parse(Fleches_GrandeMere_matern());
+            som += double.Parse(Fleches_GrandeMere_patern());
+            som += double.Parse(Fleches_Mere());
+            som += double.Parse(Fleches_Soeurs());
+            som += double.Parse(Fleches_Frere());
+            som += double.Parse(Fleches_filles());
+            som += double.Parse(Fleches_Grandpere());
+            som += double.Parse(Fleches_Pere());
+            som += double.Parse(Fleches_fils());
+
+            if (som>=LCM)
+            {
+                LCM = Convert.ToInt16(som);
+                System.Windows.Forms.MessageBox.Show("#donc  la nouvelle origine de la matiere c'est: "+LCM);
+            }
+        }
+
+        public string Fleches_fils()
         {
             string fleches = null;
-            fils = nombre;
 
-            if (nombre > 0)
+            if (Partition_fils(fils) != null)
             {
                 fleches = "R";
             }
             return fleches;
         }
-        public string Fleches_filles(int nombre)
+        public string Fleches_filles()
         {
             string fleches = null;
-            filles = nombre;
 
-            if (nombre == 1 && fils > 0)
+            if (Partition_filles(filles) != "RF" && Partition_filles(filles) != null)
             {
-                fleches = "RF";
-            }
-            else if (nombre == 1 && fils == 0)
-            {
-                fleches = "1/2";
-                Mfilles = 2;
-            }
-            else if (nombre > 1 && fils >= 0)
-            {
-                fleches = "2/3";
-                Mfilles = 3;
+                fleches = (LCM / Mfilles).ToString();
             }
             return fleches;
         }
 
-        public string Fleches_Pere(bool vivant)
+        public string Fleches_Pere()
         {
             string fleches = null;
-            pere = Convert.ToInt16(vivant);
 
-            if (vivant)
+            if (Partition_Grandpere(Convert.ToBoolean(pere))!="R" && Partition_Grandpere(Convert.ToBoolean(pere)) != null)
             {
-                if (fils > 0)
-                {
-                    fleches = "1/6";
-                    Mpere = 6;
-                }
-                else if (filles > 0)
-                {
-                    fleches = "1/6+R";
-                    Mpere = 6;
-                }
-                else
-                {
-                    fleches = "R";
-                }
+                fleches = (LCM / Mpere).ToString();
             }
             return fleches;
         }
-        public string Fleches_Mere(bool vivante)
+        public string Fleches_Mere()
         {
             string fleches = null;
 
-            if (vivante)
+            if (Partition_Mere(Convert.ToBoolean(pere)) != null)
             {
-                if (fils > 0 || filles > 0)
-                {
-                    fleches = "1/6";
-                    Mmere = 6;
-                }
-                else
-                {
-                    fleches = "1/3";
-                    Mmere = 6;
-                }
+                fleches = (LCM / Mmere).ToString();
             }
             return fleches;
         }
-        public string Fleches_Grandpere(bool vivante)
+        public string Fleches_Grandpere()
         {
             string fleches = null;
-            gpere = Convert.ToInt16(vivante);
 
-            if (vivante)
+            if (Partition_Pere(Convert.ToBoolean(pere)) != "R" && Partition_Pere(Convert.ToBoolean(pere)) != null)
             {
-                if ((fils > 0 || filles > 0 || soeur > 0) && pere == 0)
-                {
-                    fleches = "1/6";
-                    Mgpere = 6;
-                }
-                else if (pere == 0)
-                {
-                    fleches = "R";
-                }
+                fleches= (LCM / Mgpere).ToString();
             }
             return fleches;
         }
-        public string Fleches_GrandeMere_matern(bool vivante)
+        public string Fleches_GrandeMere_matern()
         {
             string fleches = null;
-            gmerem = Convert.ToInt16(vivante);
 
-            if (vivante)
+            if (Partition_GrandeMere_matern(Convert.ToBoolean(gmerem)) != null)
             {
-                if (mere == 0)
-                {
-                    fleches = "1/6";
-                    Mgmerem = 6;
-                }
+                fleches = (LCM / Mgmerem).ToString();
             }
             return fleches;
         }
 
-        public string Fleches_GrandeMere_patern(bool vivante)
+        public string Fleches_GrandeMere_patern()
         {
             string fleches = null;
-            gmerep = Convert.ToInt16(vivante);
 
-            if (vivante)
+            if (Partition_GrandeMere_patern(Convert.ToBoolean(gmerep)) != null)
             {
-                if (mere == 0 && pere == 0)
-                {
-                    fleches = "1/6";
-                    Mgmerep = 6;
-                }
+                fleches = (LCM / Mgmerem).ToString();
             }
             return fleches;
         }
-        public string Fleches_Frere(int nombre)
+        public string Fleches_Frere()
         {
             string fleches = null;
-            frere = nombre;
 
-            if (nombre > 0)
+            if (Partition_Frere(frere) == "R")
             {
-                if (fils == 0 && filles == 0 && pere == 0 && gpere == 0)
-                {
-                    if (nombre > 1)
-                    {
-                        fleches = "R";
-                    }
-                    else
-                    {
-                        fleches = "R";
-                    }
-                }
+                // R
             }
             return fleches;
         }
-        public string Fleches_Soeurs(int nombre)
+        public string Fleches_Soeurs()
         {
             string fleches = null;
-            soeur = nombre;
 
-            if (nombre == 0)
+            if (Partition_Soeurs(soeur) != null && Partition_Soeurs(soeur) != "RF")
             {
-                if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere == 0)
-                {
-                    fleches = "1/2";
-                    Msoeur = 2;
-                }
+                fleches = (LCM / Msoeur).ToString();
             }
-            else if (nombre > 1)
+            else if (Partition_Soeurs(soeur) == "RF")
             {
-                if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere == 0)
-                {
-                    fleches = "2/3";
-                    Msoeur = 3;
-                }
-                else if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere > 0)
-                {
-                    fleches = "RF";
-                }
+                // R
             }
             return fleches;
         }
-        public string Fleches_Marie(bool vivante)
+        public string Fleches_Marie()
         {
             string fleches = null;
-            marie = Convert.ToInt16(vivante);
 
-            if (vivante)
+            if (Partition_Marie(Convert.ToBoolean(marie)) != null)
             {
-                if (fils > 0 || filles > 0)
-                {
-                    fleches = "1/4";
-                    Mmarie = 4;
-                }
-                else
-                {
-                    fleches = "1/2";
-                    Mmarie = 2;
-                }
+                fleches = (LCM / Mmarie).ToString();
             }
             return fleches;
         }
-        public string Fleches_Epouses(int nombre)
+        public string Fleches_Epouses()
         {
             string fleches = null;
-            epousse = nombre;
 
-            if (nombre > 0)
+            if (Partition_Epouses(epousse) != null)
             {
-                if (fils > 0 || filles > 0)
-                {
-                    fleches = "1/8";
-                    Mepousse = 8;
-                }
-                else
-                {
-                    fleches = "1/4";
-                    Mepousse = 4;
-                }
+                fleches = (LCM / Mepousse).ToString();
             }
             return fleches;
         }

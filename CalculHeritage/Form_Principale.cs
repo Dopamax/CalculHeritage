@@ -181,7 +181,7 @@ namespace CalculHeritage
         {
             if (question1CU1.rdbtn_Homme.Checked)
             {
-                affichageFinalUC1.lbl_numero_matiere.Text = p.OrigineDeLaMAtiere();
+                
                 //Partition
                 affichageFinalUC1.lbl_fils_part.Text = p.Partition_fils(int.Parse(donneeHommeUC1.txt_nombrefils.Text));
                 affichageFinalUC1.lbl_filles_part.Text = p.Partition_filles(int.Parse(donneeHommeUC1.txt_nombrefille.Text));
@@ -195,6 +195,7 @@ namespace CalculHeritage
                 affichageFinalUC1.lbl_grandmere_p_part.Text = p.Partition_GrandeMere_patern(VerifierVivant(donneeHommeUC1.rdbtn_gm_paternelle_oui,donneeHommeUC1.rdbtn_gm_paternelle_non));
                 affichageFinalUC1.lbl_epouse_ou_marie.Text = "Epouse(s)";
 
+                affichageFinalUC1.lbl_numero_matiere.Text = p.OrigineDeLaMAtiere();
             }
             else if (question1CU1.rdbtn_Femme.Checked)
             {
@@ -210,6 +211,7 @@ namespace CalculHeritage
                 affichageFinalUC1.lbl_grandmere_p_part.Text = p.Partition_GrandeMere_patern(VerifierVivant(donneeFemmeUC1.rdbtn_gm_paternelle_oui, donneeFemmeUC1.rdbtn_gm_paternelle_non));
                 affichageFinalUC1.lbl_epouse_ou_marie.Text = "Marie";
 
+                affichageFinalUC1.lbl_numero_matiere.Text = p.OrigineDeLaMAtiere();
             }
             
         }
