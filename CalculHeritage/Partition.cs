@@ -228,7 +228,7 @@ namespace CalculHeritage
             string partition = null;
             soeur = nombre;
            
-            if (nombre ==0)
+            if (nombre ==1)
             {
                 if (fils == 0 && filles == 0 && pere == 0 && gpere == 0 && frere == 0)
                 {
@@ -331,7 +331,7 @@ namespace CalculHeritage
         ///              Fleches
         /// </summary>
         
-        void verification()
+        private double verification()
         {
             double som = 0;
             som += double.Parse(Fleches_Epouses());
@@ -340,26 +340,39 @@ namespace CalculHeritage
             som += double.Parse(Fleches_GrandeMere_patern());
             som += double.Parse(Fleches_Mere());
             som += double.Parse(Fleches_Soeurs());
-            som += double.Parse(Fleches_Frere());
+            //som += double.Parse(Fleches_Frere());
             som += double.Parse(Fleches_filles());
-            som += double.Parse(Fleches_Grandpere());
+            //som += double.Parse(Fleches_Grandpere());
             som += double.Parse(Fleches_Pere());
-            som += double.Parse(Fleches_fils());
+            //som += double.Parse(Fleches_fils());
 
             if (som>=LCM)
             {
                 LCM = Convert.ToInt16(som);
                 System.Windows.Forms.MessageBox.Show("#donc  la nouvelle origine de la matiere c'est: "+LCM);
             }
+            return som;
         }
 
+        private int reste()
+        {
+
+            return LCM- Convert.ToInt16(verification());
+        }
         public string Fleches_fils()
         {
             string fleches = null;
 
             if (Partition_fils(fils) != null)
             {
-                fleches = "R";
+                if (Partition_filles(filles)=="RF")
+                {
+                    fleches= (2*reste()/3).ToString();
+                }
+                else
+                {
+                    fleches = reste().ToString();
+                }
             }
             return fleches;
         }
@@ -367,9 +380,16 @@ namespace CalculHeritage
         {
             string fleches = null;
 
-            if (Partition_filles(filles) != "RF" && Partition_filles(filles) != null)
+            if (Partition_filles(filles) != null)
             {
-                fleches = (LCM / Mfilles).ToString();
+                if (Partition_filles(filles) == "RF")
+                {
+                    fleches = reste().ToString();
+                }
+                else
+                {
+                    fleches = ((Mfilles-1)*LCM / Mfilles).ToString();
+                }
             }
             return fleches;
         }
@@ -429,9 +449,16 @@ namespace CalculHeritage
         {
             string fleches = null;
 
-            if (Partition_Frere(frere) == "R")
+            if (Partition_Frere(frere) != null)
             {
-                // R
+                if (Partition_Soeurs(filles) == "RF")
+                {
+                    fleches = (2 * reste() / 3).ToString();
+                }
+                else
+                {
+                    fleches = reste().ToString();
+                }
             }
             return fleches;
         }
@@ -439,13 +466,16 @@ namespace CalculHeritage
         {
             string fleches = null;
 
-            if (Partition_Soeurs(soeur) != null && Partition_Soeurs(soeur) != "RF")
+            if (Partition_Soeurs(soeur) != null)
             {
-                fleches = (LCM / Msoeur).ToString();
-            }
-            else if (Partition_Soeurs(soeur) == "RF")
-            {
-                // R
+                if (Partition_Soeurs(soeur) == "RF")
+                {
+                    fleches = reste().ToString();
+                }
+                else
+                {
+                    fleches = ((Msoeur - 1) * LCM / Msoeur).ToString();
+                }
             }
             return fleches;
         }
