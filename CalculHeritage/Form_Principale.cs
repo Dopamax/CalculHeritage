@@ -12,6 +12,7 @@ namespace CalculHeritage
 {
     public partial class Form_Principale : Form
     {
+        double somme;
         public Form_Principale()
         {
             InitializeComponent();
@@ -35,6 +36,7 @@ namespace CalculHeritage
                     }
                 case 1:
                     {
+                        somme = Convert.ToDouble(question1CU1.txt_Somme.Text);
                         if (question1CU1.rdbtn_Homme.Checked)
                         {
                             usercontrol_genre = "H";
@@ -196,6 +198,17 @@ namespace CalculHeritage
                 affichageFinalUC1.lbl_epouse_ou_marie.Text = "Epouse(s)";
 
                 affichageFinalUC1.lbl_numero_matiere.Text = p.OrigineDeLaMAtiere();
+                //Fleches
+                affichageFinalUC1.lbl_somme_epou_marie.Text = p.Somme(p.Fleches_Epouses(),somme);
+                affichageFinalUC1.lbl_somme_grandmere_p.Text = p.Somme(p.Fleches_GrandeMere_patern(),somme);
+                affichageFinalUC1.lbl_grandemere_m_somme.Text = p.Somme(p.Fleches_GrandeMere_matern(),somme);
+                affichageFinalUC1.lbl_sommemere.Text = p.Somme(p.Fleches_Mere(),somme);
+                affichageFinalUC1.lbl_sommefrere.Text = p.Somme(p.Fleches_Frere(),somme);
+                affichageFinalUC1.lbl_sommesoeur.Text = p.Somme(p.Fleches_Soeurs(),somme);
+                affichageFinalUC1.lbl_somme_grandpere.Text = p.Somme(p.Fleches_Grandpere(),somme);
+                affichageFinalUC1.lbl_sommepere.Text = p.Somme(p.Fleches_Pere(),somme);
+                affichageFinalUC1.lbl_sommefils.Text = p.Somme(p.Fleches_fils(),somme);
+                affichageFinalUC1.lbl_sommefilles.Text = p.Somme(p.Fleches_filles(),somme);
             }
             else if (question1CU1.rdbtn_Femme.Checked)
             {
@@ -212,6 +225,17 @@ namespace CalculHeritage
                 affichageFinalUC1.lbl_epouse_ou_marie.Text = "Marie";
 
                 affichageFinalUC1.lbl_numero_matiere.Text = p.OrigineDeLaMAtiere();
+                //Fleches
+                affichageFinalUC1.lbl_somme_epou_marie.Text = p.Somme(p.Fleches_Marie(), somme);
+                affichageFinalUC1.lbl_somme_grandmere_p.Text = p.Somme(p.Fleches_GrandeMere_patern(), somme);
+                affichageFinalUC1.lbl_grandemere_m_somme.Text = p.Somme(p.Fleches_GrandeMere_matern(), somme);
+                affichageFinalUC1.lbl_sommemere.Text = p.Somme(p.Fleches_Mere(), somme);
+                affichageFinalUC1.lbl_sommefrere.Text = p.Somme(p.Fleches_Frere(), somme);
+                affichageFinalUC1.lbl_sommesoeur.Text = p.Somme(p.Fleches_Soeurs(), somme);
+                affichageFinalUC1.lbl_somme_grandpere.Text = p.Somme(p.Fleches_Grandpere(), somme);
+                affichageFinalUC1.lbl_sommepere.Text = p.Somme(p.Fleches_Pere(), somme);
+                affichageFinalUC1.lbl_sommefils.Text = p.Somme(p.Fleches_fils(), somme);
+                affichageFinalUC1.lbl_sommefilles.Text = p.Somme(p.Fleches_filles(), somme);
             }
             
         }
