@@ -339,12 +339,29 @@ namespace CalculHeritage
             som += double.Parse(Fleches_GrandeMere_matern());
             som += double.Parse(Fleches_GrandeMere_patern());
             som += double.Parse(Fleches_Mere());
-            som += double.Parse(Fleches_Soeurs());
-            som += double.Parse(Fleches_Frere());
-            som += double.Parse(Fleches_filles());
-            som += double.Parse(Fleches_Grandpere());// Attention !!!
-            som += double.Parse(Fleches_Pere());// Attention !!!
-            som += double.Parse(Fleches_fils());
+            if (Partition_Soeurs(soeur) != "RF")
+            {
+                som += double.Parse(Fleches_Soeurs());
+            }
+
+            //som += double.Parse(Fleches_Frere());
+
+            if (Partition_filles(filles)!="RF")
+            {
+                som += double.Parse(Fleches_filles());
+            }
+
+            if (Partition_Grandpere(Convert.ToBoolean(gpere)) == "1/6")
+            {
+                som += double.Parse(Fleches_Grandpere());// Attention !!!
+            }
+
+            if (Partition_Pere(Convert.ToBoolean(pere))=="1/6")
+            {
+                som += double.Parse(Fleches_Pere());// Attention !!!
+            }
+
+            //som += double.Parse(Fleches_fils());
 
             if (som>=LCM)
             {
